@@ -1,35 +1,101 @@
-# Pocket
+# Exoria Website
 
-Pocket is a [Tailwind Plus](https://tailwindcss.com/plus) site template built using [Tailwind CSS](https://tailwindcss.com) and [Next.js](https://nextjs.org).
+Marketing website for the Exoria iOS app - a social AI experience platform.
 
-## Getting started
-
-To get started with this template, first install the npm dependencies:
+## 🚀 Quick Start
 
 ```bash
+# Install dependencies
 npm install
+
+# Start development server
+npm run dev
+
+# View at http://localhost:3000
 ```
 
-Next, run the development server:
+## 🛠 Development
+
+This website is built with:
+- **Next.js 14** (App Router)
+- **TypeScript** 
+- **Tailwind CSS 4**
+- **Framer Motion** for animations
+- **Clerk** for waitlist and authentication
+
+### Available Scripts
 
 ```bash
-npm run dev
+npm run dev        # Start development server
+npm run build      # Build for production  
+npm run start      # Start production server
+npm run lint       # Run ESLint
+npm run check      # Run comprehensive project checks
 ```
 
-Finally, open [http://localhost:3000](http://localhost:3000) in your browser to view the website.
+## 📁 Project Structure
 
-## Customizing
+```
+src/
+├── app/                    # Next.js App Router pages
+│   ├── layout.tsx         # Root layout with metadata
+│   ├── page.tsx           # Homepage
+│   ├── (legal)/           # Legal pages (privacy, tos)
+│   └── not-found.tsx      # 404 page
+├── components/            # Reusable React components
+│   ├── Hero.tsx          # Homepage hero section
+│   ├── PrimaryFeatures.tsx # Main feature showcase
+│   └── ...               # Other UI components
+├── images/               # Static images and icons
+└── styles/               # Global CSS and Tailwind config
+```
 
-You can start editing this template by modifying the files in the `/src` folder. The site will auto-update as you edit these files.
+## 🎨 Customization
 
-## License
+### Brand Colors
+Update brand colors in `src/styles/tailwind.css` - look for CSS custom properties.
 
-This site template is a commercial product and is licensed under the [Tailwind Plus license](https://tailwindcss.com/plus/license).
+### Content
+- **Hero copy**: `src/components/Hero.tsx`
+- **Features**: `src/components/PrimaryFeatures.tsx` & `SecondaryFeatures.tsx`
+- **Pricing**: `src/components/Pricing.tsx`
+- **FAQs**: `src/components/Faqs.tsx`
 
-## Learn more
+### Legal Pages
+Add content to pages in `src/app/(legal)/` directory.
 
-To learn more about the technologies used in this site template, see the following resources:
+## 🔐 Environment Variables
 
-- [Tailwind CSS](https://tailwindcss.com/docs) - the official Tailwind CSS documentation
-- [Next.js](https://nextjs.org/docs) - the official Next.js documentation
-- [Headless UI](https://headlessui.dev) - the official Headless UI documentation
+Create `.env.local`:
+
+```bash
+# Clerk (Waitlist & Auth)
+NEXT_PUBLIC_CLERK_PUBLISHABLE_KEY=pk_test_...
+CLERK_SECRET_KEY=sk_test_...
+NEXT_PUBLIC_CLERK_SIGN_IN_URL="/sign-in"
+
+# Analytics (Optional)
+NEXT_PUBLIC_GA_ID=G-...
+```
+
+## 📱 Deployment
+
+- **Production**: https://exoria-website.vercel.app (auto-deploy from main branch)
+- **GitHub**: https://github.com/exoria-ai/website
+- **Vercel Dashboard**: [Project Settings](https://vercel.com/dashboard)
+
+## 🤝 Contributing
+
+1. Create feature branch: `git checkout -b feature/your-feature`
+2. Make changes and test locally
+3. Run checks: `npm run check`
+4. Commit with clear message
+5. Push and create PR
+
+## 📋 TODO
+
+See `WEBSITE_TODO.md` for current project roadmap and tasks.
+
+## 📄 License
+
+Proprietary - Exoria AI Inc.
