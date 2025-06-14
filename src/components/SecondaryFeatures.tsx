@@ -4,39 +4,39 @@ import { Container } from '@/components/Container'
 
 const features = [
   {
-    name: 'Invest any amount',
+    name: 'Smart conversations',
     description:
-      'Whether it’s $1 or $1,000,000, we can put your money to work for you.',
+      'Chat with AI assistants that remember context, search the web, and access your documents. Choose from multiple AI models for different needs.',
     icon: DeviceArrowIcon,
   },
   {
-    name: 'Build a balanced portfolio',
+    name: 'Voice & audio',
     description:
-      'Invest in different industries to find the most opportunities to win huge.',
+      'Real-time voice conversations with push-to-talk or continuous modes. Every character gets their own unique voice with spatial audio positioning.',
     icon: DeviceCardsIcon,
   },
   {
-    name: 'Trade in real-time',
+    name: 'Media gallery',
     description:
-      'Get insider tips on big stock moves and act on them within seconds.',
+      'Organized gallery of all your creations. Filter by type, date, or group. Full-screen viewing with easy sharing and saving to device.',
     icon: DeviceClockIcon,
   },
   {
-    name: 'Profit from your network',
+    name: 'Visual boards',
     description:
-      'Invite new insiders to get tips faster and beat even other Pocket users.',
+      'Drag-and-drop boards to organize text, images, videos, and maps. Resize and arrange content with multi-select batch operations.',
     icon: DeviceListIcon,
   },
   {
-    name: 'Encrypted and anonymized',
+    name: 'Group collaboration',
     description:
-      'Cutting-edge security technology that even the NSA doesn’t know about keeps you hidden.',
+      'Create organizations with custom permissions. Share AI assistants and boards with friends. See what others are creating and join their adventures.',
     icon: DeviceLockIcon,
   },
   {
-    name: 'Portfolio tracking',
+    name: 'Mobile-first design',
     description:
-      'Watch your investments grow exponentially, leaving other investors in the dust.',
+      'Optimized for iOS with gesture-based navigation. Works offline for creativity anywhere with push notifications for group updates.',
     icon: DeviceChartIcon,
   },
 ]
@@ -196,11 +196,12 @@ export function SecondaryFeatures() {
       <Container>
         <div className="mx-auto max-w-2xl sm:text-center">
           <h2 className="text-3xl font-medium tracking-tight text-gray-900">
-            Now is the time to build your portfolio.
+            Now is the time to unleash your creativity.
           </h2>
           <p className="mt-2 text-lg text-gray-600">
-            With typical market returns, you have to start young to secure your
-            future. With Pocket, it’s never too late to build your nest egg.
+            Whether you want to chat with AI characters, create stunning
+            artwork, or collaborate with friends, Exoria gives you the tools to
+            bring your imagination to life.
           </p>
         </div>
         <ul

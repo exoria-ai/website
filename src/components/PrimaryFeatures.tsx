@@ -11,6 +11,7 @@ import {
   motion,
 } from 'framer-motion'
 import { useDebouncedCallback } from 'use-debounce'
+import Image from 'next/image'
 
 import { AppScreen } from '@/components/AppScreen'
 import { CircleBackground } from '@/components/CircleBackground'
@@ -26,6 +27,9 @@ import {
   TransistorLogo,
   TupleLogo,
 } from '@/components/StockLogos'
+import iPhoneChat from '@/images/iPhone_Chat.png'
+import iPhoneCard from '@/images/iPhone_Card.png'
+import iPhoneSettings from '@/images/iPhone_Settings.png'
 
 const MotionAppScreenHeader = motion(AppScreen.Header)
 const MotionAppScreenBody = motion(AppScreen.Body)
@@ -37,25 +41,25 @@ interface CustomAnimationProps {
 
 const features = [
   {
-    name: 'Invite friends for better returns',
+    name: 'Create AI characters with personality',
     description:
-      'For every friend you invite to Pocket, you get insider notifications 5 seconds sooner. And it’s 10 seconds if you invite an insider.',
+      'Build AI companions with unique voices, personalities, and backstories. Switch between your real profile or roleplay as anyone you imagine. Each character remembers your conversations and evolves with you.',
     icon: DeviceUserIcon,
-    screen: InviteScreen,
+    screen: SettingsScreen,
   },
   {
-    name: 'Notifications on stock dips',
+    name: 'Transform ideas into stunning visuals',
     description:
-      'Get a push notification every time we find out something that’s going to lower the share price on your holdings so you can sell before the information hits the public markets.',
+      'Generate images with multiple artistic styles from photorealistic to abstract. Edit with text prompts or drawing masks. Create videos from images and organize everything in your personal gallery.',
     icon: DeviceNotificationIcon,
-    screen: StocksScreen,
+    screen: ChatScreen,
   },
   {
-    name: 'Invest what you want',
+    name: 'Build worlds together',
     description:
-      'We hide your stock purchases behind thousands of anonymous trading accounts, so suspicious activity can never be traced back to you.',
+      'Create visual boards to organize your universe. Form groups with friends, share custom AI assistants, and collaborate on creative projects with real-time sync and customizable permissions.',
     icon: DeviceTouchIcon,
-    screen: InvestScreen,
+    screen: CardScreen,
   },
 ]
 
@@ -190,39 +194,31 @@ type ScreenProps =
     }
   | { animated?: false }
 
-function InviteScreen(props: ScreenProps) {
+function SettingsScreen(props: ScreenProps) {
   return (
-    <AppScreen className="w-full">
-      <MotionAppScreenHeader {...(props.animated ? headerAnimation : {})}>
-        <AppScreen.Title>Invite people</AppScreen.Title>
-        <AppScreen.Subtitle>
-          Get tips <span className="text-white">5s sooner</span> for every
-          invite.
-        </AppScreen.Subtitle>
-      </MotionAppScreenHeader>
-      <MotionAppScreenBody
-        {...(props.animated ? { ...bodyAnimation, custom: props.custom } : {})}
-      >
-        <div className="px-4 py-6">
-          <div className="space-y-6">
-            {[
-              { label: 'Full name', value: 'Albert H. Wiggin' },
-              { label: 'Email address', value: 'awiggin@chase.com' },
-            ].map((field) => (
-              <div key={field.label}>
-                <div className="text-sm text-gray-500">{field.label}</div>
-                <div className="mt-2 border-b border-gray-200 pb-2 text-sm text-gray-900">
-                  {field.value}
-                </div>
-              </div>
-            ))}
-          </div>
-          <div className="mt-6 rounded-lg bg-cyan-500 px-3 py-2 text-center text-sm font-semibold text-white">
-            Invite person
-          </div>
-        </div>
-      </MotionAppScreenBody>
-    </AppScreen>
+    <div className="w-full">
+      <Image
+        src={iPhoneSettings}
+        alt="iPhone Settings"
+        className="h-auto w-full"
+      />
+    </div>
+  )
+}
+
+function ChatScreen(props: ScreenProps) {
+  return (
+    <div className="w-full">
+      <Image src={iPhoneChat} alt="iPhone Chat" className="h-auto w-full" />
+    </div>
+  )
+}
+
+function CardScreen(props: ScreenProps) {
+  return (
+    <div className="w-full">
+      <Image src={iPhoneCard} alt="iPhone Card" className="h-auto w-full" />
+    </div>
   )
 }
 
@@ -447,7 +443,7 @@ function FeaturesDesktop() {
         <div className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2">
           <CircleBackground color="#13B5C8" className="animate-spin-slower" />
         </div>
-        <PhoneFrame className="z-10 mx-auto w-full max-w-[366px]">
+        <div className="z-10 mx-auto w-full max-w-[366px]">
           <TabPanels as={Fragment}>
             <AnimatePresence
               initial={false}
@@ -469,7 +465,7 @@ function FeaturesDesktop() {
               )}
             </AnimatePresence>
           </TabPanels>
-        </PhoneFrame>
+        </div>
       </div>
     </TabGroup>
   )
@@ -526,9 +522,9 @@ function FeaturesMobile() {
                   className={featureIndex % 2 === 1 ? 'rotate-180' : undefined}
                 />
               </div>
-              <PhoneFrame className="relative mx-auto w-full max-w-[366px]">
+              <div className="relative mx-auto w-full max-w-[366px]">
                 <feature.screen />
-              </PhoneFrame>
+              </div>
               <div className="absolute inset-x-0 bottom-0 bg-gray-800/95 p-6 backdrop-blur-sm sm:p-10">
                 <feature.icon className="h-8 w-8" />
                 <h3 className="mt-6 text-sm font-semibold text-white sm:text-lg">
@@ -577,13 +573,12 @@ export function PrimaryFeatures() {
       <Container>
         <div className="mx-auto max-w-2xl lg:mx-0 lg:max-w-3xl">
           <h2 className="text-3xl font-medium tracking-tight text-white">
-            Every feature you need to win. Try it for yourself.
+            Every feature you need to create. Try it for yourself.
           </h2>
           <p className="mt-2 text-lg text-gray-400">
-            Pocket was built for investors like you who play by their own rules
-            and aren’t going to let SEC regulations get in the way of their
-            dreams. If other investing tools are afraid to build it, Pocket has
-            it.
+            Exoria was built for creators who want AI that feels real and
+            collaborative. If other AI tools are limited to text, Exoria brings
+            characters to life with voice, personality, and visual creativity.
           </p>
         </div>
       </Container>

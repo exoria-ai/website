@@ -133,10 +133,10 @@ export function Header() {
               )}
             </Popover>
             <div className="flex items-center gap-6 max-lg:hidden">
-              <Button href="/login" variant="outline">
+              {/* <Button href="/login" variant="outline">
                 Log in
               </Button>
-              <Button href="#">Download</Button>
+              <Button href="#">Download</Button> */}
             </div>
           </div>
         </Container>
