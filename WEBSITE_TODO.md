@@ -133,3 +133,75 @@ Early-access capacity will be controlled with Clerk's **Waitlist** mode and a si
 ---
 
 *Last updated: TODO — set date when tasks are next reviewed.* 
+
+---
+
+## 🚀 Implementation Roadmap
+
+### ✅ Ready to Start (Can begin immediately)
+
+**Quick Wins - Project Setup:**
+- [ ] Rename project in `package.json` 
+- [ ] Overwrite `README.md` with contributor setup notes
+- [ ] Clean `CHANGELOG.md` and start fresh
+- [ ] Delete unused auth pages (`src/app/(auth)/`)
+- [ ] Remove `StockLogos.tsx` and stock trading demo components
+- [ ] Audit and clean `package.json` dependencies
+- [ ] Run `npm run check` for code quality
+
+**Technical Infrastructure:**
+- [ ] Install `@clerk/nextjs` and set up basic structure
+- [ ] Create middleware.ts skeleton for Clerk
+- [ ] Add sitemap.xml and robots.txt generation
+- [ ] Configure `next.config.js` for image domains
+- [ ] Enable Next.js image optimization with placeholder blur
+- [ ] Implement lazy loading for heavy components
+- [ ] Configure caching headers for static assets
+- [ ] Run Lighthouse audit and fix accessibility issues
+
+**Content Structure (Generic):**
+- [ ] Update header/footer structure (remove auth links)
+- [ ] Create legal page routes (`/privacy`, `/tos`, `/support`)
+- [ ] Draft generic FAQ structure from `FEATURES.md`
+- [ ] Update secondary features section using `FEATURES.md`
+- [ ] Create basic waitlist component structure
+
+### 🔄 Needs Information (Blocked pending details)
+
+**Brand Assets & Identity:**
+- [ ] **Brand colors & fonts** → Need Exoria's design system/brand guide
+- [ ] **Logos & favicon** → Need Exoria logo files (.svg, .ico, .png)
+- [ ] **Site metadata** → Need final site title and description copy
+- [ ] **OG image** → Need social sharing image asset
+
+**Content & Copy:**
+- [ ] **Hero section copy** → Need headline, subheadline, and value prop
+- [ ] **Primary features pillars** → Which 3 core features to highlight?
+- [ ] **App screenshots** → Need current Exoria UI screenshots for demos
+- [ ] **Testimonials** → Need real user reviews/testimonials
+- [ ] **Legal pages content** → Need actual Privacy Policy and Terms of Service text
+
+**URLs & Links:**
+- [ ] **TestFlight URL** → Need current TestFlight invitation link
+- [ ] **App Store URL** → Need final App Store link (when published)
+- [ ] **Support contact** → Need support email or help center URL
+
+**Pricing & Plans:**
+- [ ] **Subscription tiers** → Need exact pricing, features, and plan names
+- [ ] **Credit system** → How does the "100 free credits" system work?
+
+**Services & Credentials:**
+- [ ] **Clerk API keys** → Need Clerk dashboard access and API keys
+- [ ] **Analytics setup** → Which service? (Plausible/GA4) Need tracking ID
+- [ ] **Clerk waitlist config** → Need access to enable waitlist mode
+
+### 📋 Dependencies Between Tasks
+- Legal page content → Footer links → Header navigation
+- Brand assets → All visual components
+- TestFlight URL → All CTA buttons and download links
+- Clerk keys → Waitlist functionality → Sign-in flow
+- App screenshots → Hero demo → Primary features screens
+
+---
+
+*Last updated: January 2025* 
