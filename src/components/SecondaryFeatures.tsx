@@ -217,7 +217,7 @@ export function SecondaryFeatures() {
           {features.map((feature) => (
             <li
               key={feature.name}
-              className="rounded-2xl border border-gray-200 p-8"
+              className="rounded-2xl border border-gray-200 bg-exoria-white p-8"
               style={{ boxShadow: 'var(--shadow-exoria-sm)' }}
             >
               <feature.icon className="h-8 w-8" />

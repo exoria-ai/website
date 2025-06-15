@@ -52,8 +52,16 @@ export function Button({ className, ...props }: ButtonProps) {
   )
 
   return typeof props.href === 'undefined' ? (
-    <button className={className} {...props} />
+    <button
+      className={className}
+      style={{ boxShadow: 'var(--shadow-exoria-sm)' }}
+      {...props}
+    />
   ) : (
-    <Link className={className} {...props} />
+    <Link
+      className={className}
+      style={{ boxShadow: 'var(--shadow-exoria-sm)' }}
+      {...props}
+    />
   )
 }

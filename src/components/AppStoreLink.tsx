@@ -16,6 +16,7 @@ export function AppStoreLink({
           ? 'bg-gray-800 text-exoria-white hover:bg-gray-900'
           : 'bg-exoria-white text-gray-900 hover:bg-gray-50',
       )}
+      style={{ boxShadow: 'var(--shadow-exoria-sm)' }}
     >
       <svg viewBox="0 0 120 40" aria-hidden="true" className="h-12">
         <path

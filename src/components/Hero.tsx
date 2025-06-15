@@ -91,11 +91,11 @@ function BackgroundIllustration(props: React.ComponentPropsWithoutRef<'div'>) {
 function PlayIcon(props: React.ComponentPropsWithoutRef<'svg'>) {
   return (
     <svg viewBox="0 0 24 24" fill="none" aria-hidden="true" {...props}>
-      <circle cx="12" cy="12" r="11.5" stroke="#D4D4D4" />
+      <circle cx="12" cy="12" r="11.5" stroke="#888888" />
       <path
         d="M9.5 14.382V9.618a.5.5 0 0 1 .724-.447l4.764 2.382a.5.5 0 0 1 0 .894l-4.764 2.382a.5.5 0 0 1-.724-.447Z"
-        fill="#A3A3A3"
-        stroke="#A3A3A3"
+        fill="#888888"
+        stroke="#888888"
       />
     </svg>
   )
@@ -124,11 +124,13 @@ export function Hero() {
               Create stunning artwork, collaborate with friends, and build
               worlds together in your personal creative playground.
             </p>
-            <div className="mt-8 flex flex-wrap gap-x-6 gap-y-4">
+            <div className="mt-8 flex flex-wrap gap-x-6 gap-y-4 bg-exoria-white">
               <AppStoreLink />
               <Button onClick={() => setIsVideoOpen(true)} variant="outline">
-                <PlayIcon className="h-6 w-6 flex-none" />
-                <span className="ml-2.5">Watch the video</span>
+                <PlayIcon className="h-8 w-8 flex-none" />
+                <span className="ml-2.5 font-outfit text-lg font-medium text-exoria-text">
+                  Watch the video
+                </span>
               </Button>
             </div>
           </div>
