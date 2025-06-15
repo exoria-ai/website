@@ -1,0 +1,50 @@
+# My Operating Rules for the Exoria Website Project
+
+This document outlines the rules and conventions I will follow while pair programming on this project. I've generated these based on my analysis of the project's configuration, code, and documentation.
+
+## 1. Core Principles
+
+- **Role:** I am an expert AI pair programmer. My goal is to help you build the Exoria website efficiently and correctly.
+- **Proactivity:** I will be proactive in implementing solutions based on your requests and the project context. I will aim to resolve queries completely in each turn.
+- **Context Awareness:** I will heavily rely on the `README.md` for project structure, `WEBSITE_TODO.md` for the project roadmap and tasks, and `docs/Docs - Tailwindv4.md` as my primary reference for styling.
+- **Communication:** I will provide clear, concise explanations for my code changes. I will use markdown for readability.
+
+## 2. Technology Stack & Implementation
+
+- **Framework:** Next.js 14 (App Router).
+  - I will use Server Components by default.
+  - I will use the `'use client'` directive only when client-side interactivity (hooks, event handlers) is necessary.
+  - New pages will go into `src/app/` and reusable components into `src/components/`.
+  - I will use the `@/*` path alias for imports from the `src` directory.
+
+- **Language:** TypeScript.
+  - I will write strictly typed code, adhering to the `strict: true` setting in `tsconfig.json`.
+  - I will define explicit types for component props, API responses, and other complex data structures.
+
+- **Styling:** Tailwind CSS 4.
+  - **Utility-First:** I will apply styles using utility classes directly in the JSX. I will avoid creating separate CSS files for component styling.
+  - **V4 Syntax:** I will use Tailwind v4 features, such as the new color/opacity syntax (`bg-blue-500/75`), arbitrary values (`w-[220px]`), and CSS variable shorthand (`bg-(--brand-color)`).
+  - **Customization:** For theme-level changes (e.g., brand colors), I will modify CSS custom properties in `src/styles/tailwind.css` as instructed by the `README.md`.
+  - **Reference:** `docs/Docs - Tailwindv4.md` is my source of truth for all Tailwind classes and concepts.
+
+- **Animations:** Framer Motion.
+  - I will use this library for complex UI animations and transitions as it is a listed dependency.
+
+- **Authentication:** Clerk.
+  - I will follow the implementation plan in `WEBSITE_TODO.md` for integrating the waitlist and sign-in flows.
+
+## 3. Code Style & Quality
+
+- **Formatting:** I will adhere to the project's Prettier configuration (`prettier.config.js`).
+  - **Quotes:** Single quotes (`'...'`).
+  - **Semicolons:** No semicolons.
+  - **Tailwind Classes:** The `prettier-plugin-tailwindcss` will handle class sorting, so I will focus on writing the correct classes.
+- **Linting:** I will write code that passes the project's ESLint checks.
+- **Component Design:** Components will be functional, self-contained, and reusable where appropriate.
+- **Comments:** I will only comment on non-trivial or complex parts of the code. My code should be as self-documenting as possible.
+
+## 4. Workflow
+
+- **Task Management:** I will consult `WEBSITE_TODO.md` to understand the priority and context of development tasks.
+- **File Management:** I will not create or delete files without a clear reason that aligns with the project goals. I will clean up unused components or files when it's part of the task.
+- **Dependencies:** I will not add new dependencies unless explicitly asked or if it's a standard solution for a given problem (after informing you).
