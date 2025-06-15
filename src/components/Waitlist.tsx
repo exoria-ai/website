@@ -57,12 +57,12 @@ export function Waitlist() {
   }
 
   return (
-    <section className="py-20 sm:py-32">
+    <section className="bg-gray-50 py-16 sm:py-20">
       <div className="mx-auto max-w-2xl px-4 text-center sm:px-6 lg:px-8">
-        <h2 className="text-3xl font-bold tracking-tight text-zinc-900 sm:text-4xl dark:text-zinc-100">
+        <h2 className="text-3xl font-medium tracking-tight text-gray-900 sm:text-4xl">
           Get early access.
         </h2>
-        <p className="mt-4 text-lg text-zinc-600 dark:text-zinc-400">
+        <p className="mt-4 text-lg text-gray-600">
           Characters that actually feel real. Be the first to build worlds with
           Exoria.
         </p>
@@ -70,7 +70,7 @@ export function Waitlist() {
           onSubmit={handleSubmit}
           className="mt-8 flex flex-col items-stretch gap-4 sm:flex-row sm:justify-center"
         >
-          <div className="flex-1">
+          <div className="max-w-md flex-1">
             <label htmlFor="email-address" className="sr-only">
               Email address
             </label>
@@ -83,13 +83,13 @@ export function Waitlist() {
               value={email}
               onChange={(e) => setEmail(e.target.value)}
               disabled={status === 'loading' || status === 'success'}
-              className="w-full min-w-0 flex-auto appearance-none rounded-md border border-zinc-900/10 bg-white px-3 py-[calc(theme(spacing.2)-1px)] text-zinc-900 shadow-md shadow-zinc-800/5 placeholder:text-zinc-400 focus:border-cyan-500 focus:ring-4 focus:ring-cyan-500/10 focus:outline-none sm:text-sm dark:border-zinc-700 dark:bg-zinc-700/[0.15] dark:text-zinc-200 dark:placeholder:text-zinc-500 dark:focus:border-cyan-400 dark:focus:ring-cyan-400/10"
+              className="w-full appearance-none rounded-md border border-gray-300 bg-white px-4 py-3 text-gray-900 placeholder-gray-500 shadow-sm focus:border-blue-500 focus:ring-1 focus:ring-blue-500 focus:outline-none disabled:bg-gray-100 disabled:text-gray-500 sm:text-sm"
             />
           </div>
           <button
             type="submit"
             disabled={status === 'loading' || status === 'success'}
-            className="inline-flex flex-none items-center justify-center gap-2 rounded-md bg-zinc-800 px-4 py-2 text-sm font-semibold text-zinc-100 outline-offset-2 transition hover:bg-zinc-700 active:bg-zinc-800 active:text-zinc-100/70 active:transition-none disabled:opacity-50 dark:bg-zinc-700 dark:hover:bg-zinc-600 dark:active:bg-zinc-700 dark:active:text-zinc-100/70"
+            className="inline-flex flex-none items-center justify-center rounded-md bg-gray-900 px-6 py-3 text-sm font-semibold text-white shadow-sm transition-colors hover:bg-gray-800 focus:ring-2 focus:ring-gray-900 focus:ring-offset-2 focus:outline-none disabled:cursor-not-allowed disabled:bg-gray-400"
           >
             {status === 'loading' ? 'Joining...' : 'Join Waitlist'}
           </button>
@@ -97,9 +97,7 @@ export function Waitlist() {
         {message && (
           <p
             className={`mt-4 text-sm font-medium ${
-              status === 'error'
-                ? 'text-red-600 dark:text-red-400'
-                : 'text-green-600 dark:text-green-400'
+              status === 'error' ? 'text-red-600' : 'text-green-600'
             }`}
           >
             {message}
