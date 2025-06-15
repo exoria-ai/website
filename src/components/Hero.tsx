@@ -1,10 +1,13 @@
-import { useId } from 'react'
+'use client'
+
+import { useId, useState } from 'react'
 import Image from 'next/image'
 import clsx from 'clsx'
 
 import { AppStoreLink } from '@/components/AppStoreLink'
 import { Button } from '@/components/Button'
 import { Container } from '@/components/Container'
+import { VideoModal } from '@/components/VideoModal'
 
 import logoBbc from '@/images/logos/bbc.svg'
 import logoCbs from '@/images/logos/cbs.svg'
@@ -99,6 +102,8 @@ function PlayIcon(props: React.ComponentPropsWithoutRef<'svg'>) {
 }
 
 export function Hero() {
+  const [isVideoOpen, setIsVideoOpen] = useState(false)
+
   return (
     <div className="overflow-hidden pt-8 pb-20 sm:pt-12 sm:pb-32 lg:pb-32 xl:pb-36">
       <Container>
@@ -121,10 +126,7 @@ export function Hero() {
             </p>
             <div className="mt-8 flex flex-wrap gap-x-6 gap-y-4">
               <AppStoreLink />
-              <Button
-                href="https://www.youtube.com/watch?v=dQw4w9WgXcQ"
-                variant="outline"
-              >
+              <Button onClick={() => setIsVideoOpen(true)} variant="outline">
                 <PlayIcon className="h-6 w-6 flex-none" />
                 <span className="ml-2.5">Watch the video</span>
               </Button>
@@ -160,6 +162,13 @@ export function Hero() {
           </div> */}
         </div>
       </Container>
+
+      <VideoModal
+        isOpen={isVideoOpen}
+        onClose={() => setIsVideoOpen(false)}
+        videoId="2rfHqlp8gY0"
+        title="Exoria - AI Character Creation"
+      />
     </div>
   )
 }
