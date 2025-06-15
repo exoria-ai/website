@@ -120,10 +120,13 @@ function RoleplayImage({
   return (
     <div
       className={clsx(
-        'animate-fade-in overflow-hidden rounded-2xl opacity-0 shadow-lg shadow-gray-900/10',
+        'animate-fade-in overflow-hidden rounded-2xl opacity-0',
         className,
       )}
-      style={{ animationDelay }}
+      style={{
+        animationDelay,
+        boxShadow: 'var(--shadow-exoria-sm)',
+      }}
       {...props}
     >
       <Image
@@ -245,7 +248,7 @@ function ImageGrid() {
   )
 }
 
-export function Reviews() {
+export function Gallery() {
   return (
     <section
       id="gallery"
