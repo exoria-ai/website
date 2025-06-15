@@ -46,7 +46,7 @@ export function Footer() {
               <p className="text-base font-semibold text-gray-900">
                 <Link href="#">
                   <span className="absolute inset-0 sm:rounded-2xl" />
-                  Download the app
+                  Download Exoria
                 </Link>
               </p>
               <p className="mt-1 text-sm text-gray-700">

@@ -118,13 +118,13 @@ function Plan({
     <section
       className={clsx(
         'flex flex-col overflow-hidden rounded-3xl p-6 shadow-lg shadow-gray-900/5',
-        featured ? 'order-first bg-gray-900 lg:order-none' : 'bg-white',
+        featured ? 'order-first bg-gray-900 lg:order-none' : 'bg-exoria-white',
       )}
     >
       <h3
         className={clsx(
           'flex items-center text-sm font-semibold',
-          featured ? 'text-white' : 'text-gray-900',
+          featured ? 'text-exoria-white' : 'text-gray-900',
         )}
       >
         <Logomark className={clsx('h-6 w-6 flex-none', logomarkClassName)} />
@@ -133,7 +133,7 @@ function Plan({
       <p
         className={clsx(
           'relative mt-5 flex text-3xl tracking-tight',
-          featured ? 'text-white' : 'text-gray-900',
+          featured ? 'text-exoria-white' : 'text-gray-900',
         )}
       >
         {price.Monthly === price.Annually ? (
@@ -186,7 +186,7 @@ function Plan({
               <CheckIcon
                 className={clsx(
                   'h-6 w-6 flex-none',
-                  featured ? 'text-white' : 'text-cyan-500',
+                  featured ? 'text-exoria-white' : 'text-cyan-500',
                 )}
               />
               <span className="ml-4">{feature}</span>
@@ -256,7 +256,7 @@ export function Pricing() {
             <div
               aria-hidden="true"
               className={clsx(
-                'pointer-events-none absolute inset-0 z-10 grid grid-cols-2 overflow-hidden rounded-lg bg-cyan-500 transition-all duration-300',
+                'pointer-events-none absolute inset-0 z-10 grid grid-cols-2 overflow-hidden rounded-xl bg-cyan-500 transition-all duration-300',
                 activePeriod === 'Monthly'
                   ? '[clip-path:inset(0_50%_0_0)]'
                   : '[clip-path:inset(0_0_0_calc(50%-1px))]',
@@ -266,7 +266,7 @@ export function Pricing() {
                 <div
                   key={period}
                   className={clsx(
-                    'py-2 text-center text-sm font-semibold text-white',
+                    'py-2 text-center text-sm font-semibold text-exoria-white',
                     period === 'Annually' && '-ml-px',
                   )}
                 >

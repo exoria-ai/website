@@ -57,12 +57,12 @@ function MobileNavLink(
 
 export function Header() {
   return (
-    <header>
+    <header className="bg-gray-900">
       <nav>
-        <Container className="relative z-50 flex justify-between py-8">
+        <Container className="relative z-50 flex items-center justify-between py-2">
           <div className="relative z-10 flex items-center gap-16">
             <Link href="/" aria-label="Home">
-              <Logo className="h-10 w-auto" />
+              <Logo />
             </Link>
             <div className="hidden lg:flex lg:gap-10">
               <NavLinks />
@@ -73,7 +73,7 @@ export function Header() {
               {({ open }) => (
                 <>
                   <PopoverButton
-                    className="relative z-10 -m-2 inline-flex items-center rounded-lg stroke-gray-900 p-2 hover:bg-gray-200/50 hover:stroke-gray-600 focus:not-data-focus:outline-hidden active:stroke-gray-900"
+                    className="relative z-10 -m-2 inline-flex items-center rounded-xl stroke-white p-2 hover:bg-exoria-white/10 hover:stroke-gray-200 focus:not-data-focus:outline-hidden active:stroke-white"
                     aria-label="Toggle site navigation"
                   >
                     {({ open }) =>

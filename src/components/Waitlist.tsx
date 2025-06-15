@@ -57,12 +57,18 @@ export function Waitlist() {
   }
 
   return (
-    <section className="bg-gray-50 py-16 sm:py-20">
+    <section className="py-16 sm:py-20">
       <div className="mx-auto max-w-2xl px-4 text-center sm:px-6 lg:px-8">
-        <h2 className="text-3xl font-medium tracking-tight text-gray-900 sm:text-4xl">
+        <h2
+          className="font-outfit text-3xl font-medium text-gray-900 sm:text-4xl"
+          style={{ letterSpacing: 'var(--letter-spacing-heading-3xl)' }}
+        >
           Get early access.
         </h2>
-        <p className="mt-4 text-lg text-gray-600">
+        <p
+          className="mt-4 text-lg text-gray-600"
+          style={{ letterSpacing: 'var(--letter-spacing-body-lg)' }}
+        >
           Characters that actually feel real. Be the first to build worlds with
           Exoria.
         </p>
@@ -83,13 +89,15 @@ export function Waitlist() {
               value={email}
               onChange={(e) => setEmail(e.target.value)}
               disabled={status === 'loading' || status === 'success'}
-              className="w-full appearance-none rounded-md border border-gray-300 bg-white px-4 py-3 text-gray-900 placeholder-gray-500 shadow-sm focus:border-blue-500 focus:ring-1 focus:ring-blue-500 focus:outline-none disabled:bg-gray-100 disabled:text-gray-500 sm:text-sm"
+              className="w-full appearance-none rounded-xl border-0 bg-exoria-input px-4 py-3 text-exoria-text placeholder-exoria-gray shadow-exoria-sm focus:shadow-exoria focus:outline-none disabled:bg-exoria-canvas-clear disabled:text-exoria-gray sm:text-sm"
+              style={{ boxShadow: 'var(--shadow-exoria-sm)' }}
             />
           </div>
           <button
             type="submit"
             disabled={status === 'loading' || status === 'success'}
-            className="inline-flex flex-none items-center justify-center rounded-md bg-gray-900 px-6 py-3 text-sm font-semibold text-white shadow-sm transition-colors hover:bg-gray-800 focus:ring-2 focus:ring-gray-900 focus:ring-offset-2 focus:outline-none disabled:cursor-not-allowed disabled:bg-gray-400"
+            className="inline-flex flex-none items-center justify-center rounded-xl bg-exoria-drawer-header px-6 py-3 text-sm font-semibold text-exoria-black transition-colors hover:bg-exoria-header focus:outline-none disabled:cursor-not-allowed disabled:bg-exoria-gray"
+            style={{ boxShadow: 'var(--shadow-exoria-sm)' }}
           >
             {status === 'loading' ? 'Joining...' : 'Join Waitlist'}
           </button>

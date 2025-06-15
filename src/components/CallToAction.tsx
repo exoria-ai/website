@@ -13,10 +13,16 @@ export function CallToAction() {
       </div>
       <Container className="relative">
         <div className="mx-auto max-w-md sm:text-center">
-          <h2 className="text-3xl font-medium tracking-tight text-white sm:text-4xl">
+          <h2
+            className="font-outfit text-3xl font-medium text-exoria-white sm:text-4xl"
+            style={{ letterSpacing: 'var(--letter-spacing-heading-3xl)' }}
+          >
             Start creating today
           </h2>
-          <p className="mt-4 text-lg text-gray-300">
+          <p
+            className="mt-4 text-lg text-gray-300"
+            style={{ letterSpacing: 'var(--letter-spacing-body-lg)' }}
+          >
             Download Exoria and get 100 free credits to start chatting with AI
             characters and creating stunning artwork. Your creative playground
             awaits.

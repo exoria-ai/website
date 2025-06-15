@@ -89,7 +89,12 @@ export function Faqs() {
               <ul role="list" className="space-y-10">
                 {column.map((faq, faqIndex) => (
                   <li key={faqIndex}>
-                    <h3 className="text-lg/6 font-semibold text-gray-900">
+                    <h3
+                      className="font-outfit text-lg/6 font-semibold text-gray-900"
+                      style={{
+                        letterSpacing: 'var(--letter-spacing-heading-lg)',
+                      }}
+                    >
                       {faq.question}
                     </h3>
                     <p className="mt-4 text-sm text-gray-700">{faq.answer}</p>

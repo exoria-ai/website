@@ -195,10 +195,16 @@ export function SecondaryFeatures() {
     >
       <Container>
         <div className="mx-auto max-w-2xl sm:text-center">
-          <h2 className="text-3xl font-medium tracking-tight text-gray-900">
+          <h2
+            className="font-outfit text-3xl font-medium text-gray-900"
+            style={{ letterSpacing: 'var(--letter-spacing-heading-3xl)' }}
+          >
             Now is the time to unleash your creativity.
           </h2>
-          <p className="mt-2 text-lg text-gray-600">
+          <p
+            className="mt-2 text-lg text-gray-600"
+            style={{ letterSpacing: 'var(--letter-spacing-body-lg)' }}
+          >
             Whether you want to chat with AI characters, create stunning
             artwork, or collaborate with friends, Exoria gives you the tools to
             bring your imagination to life.
@@ -214,7 +220,10 @@ export function SecondaryFeatures() {
               className="rounded-2xl border border-gray-200 p-8"
             >
               <feature.icon className="h-8 w-8" />
-              <h3 className="mt-6 font-semibold text-gray-900">
+              <h3
+                className="mt-6 font-outfit font-semibold text-gray-900"
+                style={{ letterSpacing: 'var(--letter-spacing-heading)' }}
+              >
                 {feature.name}
               </h3>
               <p className="mt-2 text-gray-700">{feature.description}</p>

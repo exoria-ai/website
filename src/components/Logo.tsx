@@ -1,5 +1,5 @@
 import Image from 'next/image'
-import appIcon from '../images/appIcon.png'
+import appIcon from '../images/exoria_logo.png'
 
 export function Logomark(
   props: Omit<React.ComponentPropsWithoutRef<'div'>, 'width' | 'height'> & {
@@ -17,9 +17,11 @@ export function Logomark(
 
 export function Logo(props: React.ComponentPropsWithoutRef<'div'>) {
   return (
-    <div className="flex items-center" {...props}>
-      <Logomark width={40} height={40} className="mr-2" />
-      <span className="text-xl font-semibold text-gray-900">Pocket</span>
+    <div className="flex flex-col items-center py-2" {...props}>
+      <Logomark width={72} height={72} className="hidden lg:block" />
+      <span className="font-outfit text-xl font-semibold text-exoria-white lg:mt-1 lg:text-sm">
+        EXORIA
+      </span>
     </div>
   )
 }

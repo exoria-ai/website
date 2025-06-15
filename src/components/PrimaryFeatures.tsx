@@ -16,7 +16,6 @@ import Image from 'next/image'
 import { AppScreen } from '@/components/AppScreen'
 import { CircleBackground } from '@/components/CircleBackground'
 import { Container } from '@/components/Container'
-import { PhoneFrame } from '@/components/PhoneFrame'
 import {
   DiageoLogo,
   LaravelLogo,
@@ -330,7 +329,7 @@ function InvestScreen(props: ScreenProps) {
       <MotionAppScreenHeader {...(props.animated ? headerAnimation : {})}>
         <AppScreen.Title>Buy $LA</AppScreen.Title>
         <AppScreen.Subtitle>
-          <span className="text-white">$34.28</span> per share
+          <span className="text-exoria-white">$34.28</span> per share
         </AppScreen.Subtitle>
       </MotionAppScreenHeader>
       <MotionAppScreenBody
@@ -369,7 +368,7 @@ function InvestScreen(props: ScreenProps) {
                 </div>
               </div>
             ))}
-            <div className="rounded-lg bg-cyan-500 px-3 py-2 text-center text-sm font-semibold text-white">
+            <div className="rounded-xl bg-cyan-500 px-3 py-2 text-center text-sm font-semibold text-exoria-white">
               Buy shares
             </div>
           </div>
@@ -426,7 +425,10 @@ function FeaturesDesktop() {
             )}
             <div className="relative z-10 p-8">
               <feature.icon className="h-8 w-8" />
-              <h3 className="mt-6 text-lg font-semibold text-white">
+              <h3
+                className="mt-6 font-outfit text-lg font-semibold text-exoria-white"
+                style={{ letterSpacing: 'var(--letter-spacing-heading-lg)' }}
+              >
                 <Tab className="text-left data-selected:not-data-focus:outline-hidden">
                   <span className="absolute inset-0 rounded-2xl" />
                   {feature.name}
@@ -527,7 +529,7 @@ function FeaturesMobile() {
               </div>
               <div className="absolute inset-x-0 bottom-0 bg-gray-800/95 p-6 backdrop-blur-sm sm:p-10">
                 <feature.icon className="h-8 w-8" />
-                <h3 className="mt-6 text-sm font-semibold text-white sm:text-lg">
+                <h3 className="mt-6 font-outfit text-sm font-semibold text-exoria-white sm:text-lg">
                   {feature.name}
                 </h3>
                 <p className="mt-2 text-sm text-gray-400">
@@ -572,10 +574,16 @@ export function PrimaryFeatures() {
     >
       <Container>
         <div className="mx-auto max-w-2xl lg:mx-0 lg:max-w-3xl">
-          <h2 className="text-3xl font-medium tracking-tight text-white">
+          <h2
+            className="font-outfit text-3xl font-medium text-exoria-white"
+            style={{ letterSpacing: 'var(--letter-spacing-heading-3xl)' }}
+          >
             Every feature you need to create. Try it for yourself.
           </h2>
-          <p className="mt-2 text-lg text-gray-400">
+          <p
+            className="mt-2 text-lg text-gray-400"
+            style={{ letterSpacing: 'var(--letter-spacing-body-lg)' }}
+          >
             Exoria was built for creators who want AI that feels real and
             collaborative. If other AI tools are limited to text, Exoria brings
             characters to life with voice, personality, and visual creativity.

@@ -1,22 +1,28 @@
 import { type Metadata } from 'next'
-import { Inter } from 'next/font/google'
+import { Outfit, Manrope } from 'next/font/google'
 import clsx from 'clsx'
 
 import '@/styles/tailwind.css'
 
-const inter = Inter({
+const outfit = Outfit({
   subsets: ['latin'],
   display: 'swap',
-  variable: '--font-inter',
+  variable: '--font-outfit',
+})
+
+const manrope = Manrope({
+  subsets: ['latin'],
+  display: 'swap',
+  variable: '--font-manrope',
 })
 
 export const metadata: Metadata = {
   title: {
-    template: '%s - Pocket',
-    default: 'Pocket - Invest at the perfect time.',
+    template: '%s - Exoria',
+    default: 'Exoria - Characters that actually feel real',
   },
   description:
-    'By leveraging insights from our network of industry insiders, you’ll know exactly when to buy to maximize profit, and exactly when to sell to avoid painful losses.',
+    'The first social AI experience where you can chat with AI characters that have unique personalities, voices, and memories. Create stunning artwork, collaborate with friends, and build worlds together.',
 }
 
 export default function RootLayout({
@@ -25,8 +31,15 @@ export default function RootLayout({
   children: React.ReactNode
 }) {
   return (
-    <html lang="en" className={clsx('bg-gray-50 antialiased', inter.variable)}>
-      <body>{children}</body>
+    <html
+      lang="en"
+      className={clsx(
+        'bg-exoria-background antialiased',
+        outfit.variable,
+        manrope.variable,
+      )}
+    >
+      <body className="font-manrope">{children}</body>
     </html>
   )
 }
