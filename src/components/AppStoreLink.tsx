@@ -8,8 +8,8 @@ export function AppStoreLink({
 }) {
   return (
     <Link
-      href="#"
-      aria-label="Download on the App Store"
+      href="https://testflight.apple.com/join/KZdSCAC9"
+      aria-label="Download on TestFlight"
       className={clsx(
         'rounded-xl transition-colors',
         color === 'black'
