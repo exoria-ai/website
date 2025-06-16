@@ -65,7 +65,7 @@ export function Faqs() {
         <div className="mx-auto max-w-2xl lg:mx-0">
           <h2
             id="faqs-title"
-            className="text-3xl font-medium tracking-tight text-gray-900"
+            className="tracking-tighttext-gray-900 text-3xl font-medium"
           >
             Frequently asked questions
           </h2>
@@ -90,7 +90,7 @@ export function Faqs() {
                 {column.map((faq, faqIndex) => (
                   <li key={faqIndex}>
                     <h3
-                      className="font-outfit text-lg/6 font-semibold text-gray-900"
+                      className="font-semiboldtext-gray-900 font-outfit text-lg/6"
                       style={{
                         letterSpacing: 'var(--letter-spacing-heading-lg)',
                       }}

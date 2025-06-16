@@ -221,7 +221,7 @@ export function Pricing() {
         <div className="mx-auto max-w-2xl text-center">
           <h2
             id="pricing-title"
-            className="text-3xl font-medium tracking-tight text-gray-900"
+            className="tracking-tighttext-gray-900 text-3xl font-medium"
           >
             Flat pricing, no management fees.
           </h2>

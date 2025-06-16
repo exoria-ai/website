@@ -60,7 +60,7 @@ export function Waitlist() {
     <section className="py-16 sm:py-20">
       <div className="mx-auto max-w-2xl px-4 text-center sm:px-6 lg:px-8">
         <h2
-          className="font-outfit text-3xl font-medium text-gray-900 sm:text-4xl"
+          className="font-mediumtext-gray-900 font-outfit text-3xl sm:text-4xl"
           style={{ letterSpacing: 'var(--letter-spacing-heading-3xl)' }}
         >
           Get early access.

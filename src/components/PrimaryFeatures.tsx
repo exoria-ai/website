@@ -297,11 +297,9 @@ function StocksScreen(props: ScreenProps) {
               >
                 <stock.logo className="h-10 w-10" />
               </div>
-              <div className="flex-auto text-sm text-gray-900">
-                {stock.name}
-              </div>
+              <div className="text-smtext-gray-900 flex-auto">{stock.name}</div>
               <div className="flex-none text-right">
-                <div className="text-sm font-medium text-gray-900">
+                <div className="font-mediumtext-gray-900 text-sm">
                   {stock.price}
                 </div>
                 <div
@@ -363,7 +361,7 @@ function InvestScreen(props: ScreenProps) {
                 className="flex justify-between border-b border-gray-100 pb-4"
               >
                 <div className="text-sm text-gray-500">{item.label}</div>
-                <div className="text-sm font-semibold text-gray-900">
+                <div className="font-semiboldtext-gray-900 text-sm">
                   {item.value}
                 </div>
               </div>

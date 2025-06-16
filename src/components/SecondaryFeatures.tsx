@@ -196,7 +196,7 @@ export function SecondaryFeatures() {
       <Container>
         <div className="mx-auto max-w-2xl sm:text-center">
           <h2
-            className="font-outfit text-3xl font-medium text-gray-900"
+            className="font-mediumtext-gray-900 font-outfit text-3xl"
             style={{ letterSpacing: 'var(--letter-spacing-heading-3xl)' }}
           >
             Now is the time to unleash your creativity.
@@ -222,7 +222,7 @@ export function SecondaryFeatures() {
             >
               <feature.icon className="h-8 w-8" />
               <h3
-                className="mt-6 font-outfit font-semibold text-gray-900"
+                className="font-semiboldtext-gray-900 mt-6 font-outfit"
                 style={{ letterSpacing: 'var(--letter-spacing-heading)' }}
               >
                 {feature.name}

@@ -25,7 +25,7 @@ export function AuthLayout({
             className="absolute -top-7 left-1/2 -z-10 h-[788px] -translate-x-1/2 mask-[linear-gradient(to_bottom,white_20%,transparent_75%)] stroke-gray-300/30 sm:-top-9 sm:h-auto"
           />
           <h1
-            className="text-center font-outfit text-2xl font-medium text-gray-900"
+            className="font-mediumtext-gray-900 text-center font-outfit text-2xl"
             style={{ letterSpacing: 'var(--letter-spacing-heading-2xl)' }}
           >
             {title}

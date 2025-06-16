@@ -110,7 +110,7 @@ export function Hero() {
         <div className="lg:grid lg:grid-cols-12 lg:gap-x-8 lg:gap-y-20">
           <div className="relative z-10 mx-auto max-w-2xl lg:col-span-7 lg:max-w-none lg:pt-6 xl:col-span-6">
             <h1
-              className="font-outfit text-4xl font-medium text-gray-900"
+              className="font-mediumtext-gray-900 font-outfit text-4xl"
               style={{ letterSpacing: 'var(--letter-spacing-heading-4xl)' }}
             >
               Characters that actually feel real.
@@ -145,7 +145,7 @@ export function Hero() {
             </div>
           </div>
           {/* <div className="relative -mt-4 lg:col-span-7 lg:mt-0 xl:col-span-6">
-            <p className="text-center text-sm font-semibold text-gray-900 lg:text-left">
+            <p className="text-center text-sm font-semiboldtext-gray-900 lg:text-left">
               As featured in
             </p>
             <ul

@@ -14,7 +14,7 @@ export function AppStoreLink({
         'rounded-xl transition-colors',
         color === 'black'
           ? 'bg-gray-800 text-exoria-white hover:bg-gray-900'
-          : 'bg-exoria-white text-gray-900 hover:bg-gray-50',
+          : 'bg-exoria-whitetext-gray-900 hover:bg-gray-50',
       )}
       style={{ boxShadow: 'var(--shadow-exoria-sm)' }}
     >
