@@ -12,59 +12,93 @@ const plans = [
   {
     name: 'Starter',
     featured: false,
-    price: { Monthly: '$0', Annually: '$0' },
+    price: 'Free',
+    credits: '100 credits/month',
     description:
-      'You’re new to investing but want to do it right. Get started for free.',
+      'Perfect for exploring AI companions and trying out creative features.',
     button: {
       label: 'Get started for free',
       href: '/register',
     },
     features: [
-      'Commission-free trading',
-      'Multi-layered encryption',
-      'One tip every day',
-      'Invest up to $1,500 each month',
+      'Basic chat with AI assistants',
+      'Limited image generation',
+      'Access to community assistants',
+      'Basic voice features',
+    ],
+    limitations: [
+      'No custom assistant creation',
+      'No video generation',
+      'No group collaboration',
+      'No advanced AI models',
     ],
     logomarkClassName: 'fill-gray-300',
   },
   {
-    name: 'Investor',
-    featured: false,
-    price: { Monthly: '$7', Annually: '$70' },
-    description:
-      'You’ve been investing for a while. Invest more and grow your wealth faster.',
-    button: {
-      label: 'Subscribe',
-      href: '/register',
-    },
-    features: [
-      'Commission-free trading',
-      'Multi-layered encryption',
-      'One tip every hour',
-      'Invest up to $15,000 each month',
-      'Basic transaction anonymization',
-    ],
-    logomarkClassName: 'fill-gray-500',
-  },
-  {
-    name: 'VIP',
+    name: 'Creator',
     featured: true,
-    price: { Monthly: '$199', Annually: '$1,990' },
+    price: '$20',
+    credits: '2,250 credits/month',
     description:
-      'You’ve got a huge amount of assets but it’s not enough. To the moon.',
+      'Unlock your creativity with custom assistants, advanced features, and collaboration.',
     button: {
-      label: 'Subscribe',
+      label: 'Start creating',
       href: '/register',
     },
     features: [
-      'Commission-free trading',
-      'Multi-layered encryption',
-      'Real-time tip notifications',
-      'No investment limits',
-      'Advanced transaction anonymization',
-      'Automated tax-loss harvesting',
+      'Create custom AI assistants',
+      'Advanced image & video generation',
+      'Group collaboration & boards',
+      'Access to all AI models',
+      'Spatial audio conversations',
+      'Document upload & analysis',
+      'Priority support',
     ],
     logomarkClassName: 'fill-cyan-500',
+  },
+  {
+    name: 'Pro',
+    featured: false,
+    price: '$100',
+    credits: '12,500 credits/month',
+    description:
+      'For power users who want unlimited creative freedom and maximum productivity.',
+    button: {
+      label: 'Go Pro',
+      href: '/register',
+    },
+    features: [
+      'Everything in Creator',
+      'Enhanced reasoning AI models',
+      'Bulk image generation',
+      'Advanced editing tools',
+      'Organization management',
+      'Custom voice training',
+      'API access (coming soon)',
+      'Dedicated support',
+    ],
+    logomarkClassName: 'fill-purple-500',
+  },
+]
+
+const addOnPacks = [
+  {
+    name: 'Boost',
+    price: '$5',
+    credits: '500 credits',
+    description: 'Perfect for occasional creative bursts',
+  },
+  {
+    name: 'Power',
+    price: '$10',
+    credits: '1,000 credits',
+    description: 'Great for regular content creation',
+  },
+  {
+    name: 'Pro Pack',
+    price: '$25',
+    credits: '2,500 credits',
+    description: 'Best value for heavy usage',
   },
 ]
 
@@ -92,25 +126,24 @@ function CheckIcon(props: React.ComponentPropsWithoutRef<'svg'>) {
 function Plan({
   name,
   price,
+  credits,
   description,
   button,
   features,
-  activePeriod,
+  limitations,
   logomarkClassName,
   featured = false,
 }: {
   name: string
-  price: {
-    Monthly: string
-    Annually: string
-  }
+  price: string
+  credits: string
   description: string
   button: {
     label: string
     href: string
   }
   features: Array<string>
-  activePeriod: 'Monthly' | 'Annually'
+  limitations?: Array<string>
   logomarkClassName?: string
   featured?: boolean
 }) {
@@ -136,32 +169,23 @@ function Plan({
           featured ? 'text-exoria-white' : 'text-gray-900',
         )}
       >
-        {price.Monthly === price.Annually ? (
-          price.Monthly
-        ) : (
-          <>
-            <span
-              aria-hidden={activePeriod === 'Annually'}
-              className={clsx(
-                'transition duration-300',
-                activePeriod === 'Annually' &&
-                  'pointer-events-none translate-x-6 opacity-0 select-none',
-              )}
-            >
-              {price.Monthly}
-            </span>
-            <span
-              aria-hidden={activePeriod === 'Monthly'}
-              className={clsx(
-                'absolute top-0 left-0 transition duration-300',
-                activePeriod === 'Monthly' &&
-                  'pointer-events-none -translate-x-6 opacity-0 select-none',
-              )}
-            >
-              {price.Annually}
-            </span>
-          </>
+        {price}
+        <span
+          className={clsx(
+            'ml-1 text-sm font-normal',
+            featured ? 'text-gray-300' : 'text-gray-500',
+          )}
+        >
+          /month
+        </span>
+      </p>
+      <p
+        className={clsx(
+          'mt-1 text-sm font-medium',
+          featured ? 'text-cyan-400' : 'text-cyan-600',
         )}
+      >
+        {credits}
       </p>
       <p
         className={clsx(
@@ -192,6 +216,25 @@ function Plan({
               <span className="ml-4">{feature}</span>
             </li>
           ))}
+          {limitations &&
+            limitations.map((limitation) => (
+              <li key={limitation} className="flex py-2 opacity-60">
+                <svg
+                  className="h-6 w-6 flex-none text-gray-400"
+                  fill="none"
+                  viewBox="0 0 24 24"
+                  stroke="currentColor"
+                >
+                  <path
+                    strokeLinecap="round"
+                    strokeLinejoin="round"
+                    strokeWidth={2}
+                    d="M6 18L18 6M6 6l12 12"
+                  />
+                </svg>
+                <span className="ml-4">{limitation}</span>
+              </li>
+            ))}
         </ul>
       </div>
       <Button
@@ -206,11 +249,38 @@ function Plan({
   )
 }
 
-export function Pricing() {
-  let [activePeriod, setActivePeriod] = useState<'Monthly' | 'Annually'>(
-    'Monthly',
+function AddOnPack({
+  name,
+  price,
+  credits,
+  description,
+}: {
+  name: string
+  price: string
+  credits: string
+  description: string
+}) {
+  return (
+    <div className="flex flex-col rounded-2xl bg-exoria-white p-6 shadow-sm ring-1 ring-gray-200">
+      <div className="flex items-center justify-between">
+        <h4 className="text-lg font-semibold text-gray-900">{name}</h4>
+        <span className="text-2xl font-bold text-gray-900">{price}</span>
+      </div>
+      <p className="mt-1 text-sm font-medium text-cyan-600">{credits}</p>
+      <p className="mt-2 text-sm text-gray-600">{description}</p>
+      <Button
+        href="/register"
+        color="gray"
+        className="mt-4"
+        aria-label={`Purchase ${name} add-on pack`}
+      >
+        Add Credits
+      </Button>
+    </div>
   )
+}
 
+export function Pricing() {
   return (
     <section
       id="pricing"
@@ -223,64 +293,42 @@ export function Pricing() {
             id="pricing-title"
             className="tracking-tighttext-gray-900 text-3xl font-medium"
           >
-            Flat pricing, no management fees.
+            Simple credit-based pricing.
           </h2>
           <p className="mt-2 text-lg text-gray-600">
-            Whether you’re one person trying to get ahead or a big firm trying
-            to take over the world, we’ve got a plan for you.
+            Start for free, upgrade when you&rsquo;re ready to unlock the full
+            creative potential of AI companions.
           </p>
-        </div>
-
-        <div className="mt-8 flex justify-center">
-          <div className="relative">
-            <RadioGroup
-              value={activePeriod}
-              onChange={setActivePeriod}
-              className="grid grid-cols-2"
-            >
-              {['Monthly', 'Annually'].map((period) => (
-                <Radio
-                  key={period}
-                  value={period}
-                  className={clsx(
-                    'cursor-pointer border border-gray-300 px-[calc(--spacing(3)-1px)] py-[calc(--spacing(2)-1px)] text-sm text-gray-700 transition-colors hover:border-gray-400 data-focus:outline-2 data-focus:outline-offset-2',
-                    period === 'Monthly'
-                      ? 'rounded-l-lg'
-                      : '-ml-px rounded-r-lg',
-                  )}
-                >
-                  {period}
-                </Radio>
-              ))}
-            </RadioGroup>
-            <div
-              aria-hidden="true"
-              className={clsx(
-                'pointer-events-none absolute inset-0 z-10 grid grid-cols-2 overflow-hidden rounded-xl bg-cyan-500 transition-all duration-300',
-                activePeriod === 'Monthly'
-                  ? '[clip-path:inset(0_50%_0_0)]'
-                  : '[clip-path:inset(0_0_0_calc(50%-1px))]',
-              )}
-            >
-              {['Monthly', 'Annually'].map((period) => (
-                <div
-                  key={period}
-                  className={clsx(
-                    'py-2 text-center text-sm font-semibold text-exoria-white',
-                    period === 'Annually' && '-ml-px',
-                  )}
-                >
-                  {period}
-                </div>
-              ))}
-            </div>
-          </div>
         </div>
 
         <div className="mx-auto mt-16 grid max-w-2xl grid-cols-1 items-start gap-x-8 gap-y-10 sm:mt-20 lg:max-w-none lg:grid-cols-3">
           {plans.map((plan) => (
-            <Plan key={plan.name} {...plan} activePeriod={activePeriod} />
+            <Plan key={plan.name} {...plan} />
           ))}
+        </div>
+
+        {/* Add-on Credit Packs */}
+        <div className="mx-auto mt-20 max-w-2xl text-center">
+          <h3 className="text-2xl font-medium text-gray-900">
+            Need more credits?
+          </h3>
+          <p className="mt-2 text-gray-600">
+            Add-on credit packs roll over month to month. Perfect for creative
+            bursts.
+          </p>
+        </div>
+
+        <div className="mx-auto mt-12 grid max-w-4xl grid-cols-1 gap-6 sm:grid-cols-2 lg:grid-cols-3">
+          {addOnPacks.map((pack) => (
+            <AddOnPack key={pack.name} {...pack} />
+          ))}
+        </div>
+
+        <div className="mx-auto mt-12 max-w-2xl text-center">
+          <p className="text-sm text-gray-500">
+            Credits never expire and roll over each month. All plans include
+            access to our community and basic support.
+          </p>
         </div>
       </Container>
     </section>

@@ -242,8 +242,8 @@ function ImageGrid() {
           />
         </>
       )}
-      <div className="pointer-events-none absolute inset-x-0 top-0 h-32 bg-linear-to-b from-exoria-background" />
-      <div className="pointer-events-none absolute inset-x-0 bottom-0 h-32 bg-linear-to-t from-exoria-background" />
+      <div className="pointer-events-none absolute inset-x-0 top-0 h-32 bg-gradient-to-b from-gray-900" />
+      <div className="pointer-events-none absolute inset-x-0 bottom-0 h-32 bg-gradient-to-t from-gray-900" />
     </div>
   )
 }
@@ -253,16 +253,16 @@ export function Gallery() {
     <section
       id="gallery"
       aria-labelledby="gallery-title"
-      className="pt-20 pb-16 sm:pt-32 sm:pb-24"
+      className="bg-gray-900 pt-20 pb-16 sm:pt-32 sm:pb-24"
     >
       <Container>
         <h2
           id="gallery-title"
-          className="font-display text-3xl font-medium tracking-tight text-exoria-text sm:text-center"
+          className="font-display text-3xl font-medium tracking-tight text-exoria-white sm:text-center"
         >
           Bring any character to life.
         </h2>
-        <p className="mt-2 text-lg text-exoria-gray sm:text-center">
+        <p className="mt-2 text-lg text-gray-300 sm:text-center">
           Create and interact with unlimited AI characters in immersive roleplay
           scenarios.
         </p>
