@@ -10,7 +10,7 @@ const baseStyles = {
 
 const variantStyles = {
   solid: {
-    cyan: 'relative overflow-hidden bg-cyan-500 text-exoria-white before:absolute before:inset-0 active:before:bg-transparent hover:before:bg-exoria-white/10 active:bg-cyan-600 active:text-exoria-white/80 before:transition-colors',
+    cyan: 'bg-exoria-drawer-header text-exoria-black hover:bg-exoria-header active:bg-exoria-header active:text-exoria-black/80',
     white:
       'bg-exoria-white text-cyan-900 hover:bg-exoria-white/90 active:bg-exoria-white/90 active:text-cyan-900/70',
     gray: 'bg-gray-800 text-exoria-white hover:bg-gray-900 active:bg-gray-800 active:text-exoria-white/80',
