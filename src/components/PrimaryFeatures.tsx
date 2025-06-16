@@ -40,23 +40,23 @@ interface CustomAnimationProps {
 
 const features = [
   {
-    name: 'Create AI characters with personality',
+    name: 'Your creative studio in the cloud',
     description:
-      'Build AI companions with unique voices, personalities, and backstories. Switch between your real profile or roleplay as anyone you imagine. Each character remembers your conversations and evolves with you.',
+      'Pinterest meets Figma meets AI. Drag-drop boards where humans and AIs create together in real-time. Generate images, edit with masks, turn stills into videos. Your changes sync instantly for everyone.',
     icon: DeviceUserIcon,
     screen: SettingsScreen,
   },
   {
-    name: 'Transform ideas into stunning visuals',
+    name: 'Living worlds with real voices',
     description:
-      'Generate images with multiple artistic styles from photorealistic to abstract. Edit with text prompts or drawing masks. Create videos from images and organize everything in your personal gallery.',
+      'Experience conversations that feel natural with push-to-talk or continuous audio. Every AI has their own voice and personality. Spatial audio places voices around you—multiple people and AIs talking at once, just like real life.',
     icon: DeviceNotificationIcon,
     screen: ChatScreen,
   },
   {
-    name: 'Build worlds together',
+    name: 'Your universe, your rules',
     description:
-      'Create visual boards to organize your universe. Form groups with friends, share custom AI assistants, and collaborate on creative projects with real-time sync and customizable permissions.',
+      'Create private worlds with custom AIs exclusive to your group. Invite friends, control permissions, share assistants. See what others are creating and join their adventures. The first app where watching others use AI is as fun as using it yourself.',
     icon: DeviceTouchIcon,
     screen: CardScreen,
   },
@@ -576,15 +576,16 @@ export function PrimaryFeatures() {
             className="font-outfit text-3xl font-medium text-exoria-white"
             style={{ letterSpacing: 'var(--letter-spacing-heading-3xl)' }}
           >
-            Every feature you need to create. Try it for yourself.
+            Every tool you need to build worlds. Experience it together.
           </h2>
           <p
             className="mt-2 text-lg text-gray-400"
             style={{ letterSpacing: 'var(--letter-spacing-body-lg)' }}
           >
-            Exoria was built for creators who want AI that feels real and
-            collaborative. If other AI tools are limited to text, Exoria brings
-            characters to life with voice, personality, and visual creativity.
+            Exoria isn&rsquo;t just another AI chat app—it&rsquo;s a creative
+            universe where humans and AI companions collaborate in real-time.
+            Build worlds, share experiences, and watch your friends create
+            alongside you.
           </p>
         </div>
       </Container>

@@ -10,70 +10,69 @@ import { Logomark } from '@/components/Logo'
 
 const plans = [
   {
-    name: 'Starter',
+    name: 'Explorer',
     featured: false,
     price: 'Free',
     credits: '100 credits/month',
     description:
-      'Perfect for exploring AI companions and trying out creative features.',
+      'Perfect for discovering what&rsquo;s possible in social AI creation.',
     button: {
-      label: 'Get started for free',
+      label: 'Start exploring',
       href: '/register',
     },
     features: [
-      'Basic chat with AI assistants',
-      'Limited image generation',
-      'Access to community assistants',
-      'Basic voice features',
+      'Basic world access',
+      'Limited AI interactions',
+      'Community worlds only',
+      'Basic generation tools',
     ],
     limitations: [
-      'No custom assistant creation',
-      'No video generation',
-      'No group collaboration',
-      'No advanced AI models',
+      'No custom AI creation',
+      'No private groups',
+      'View-only collaboration',
+      'Standard AI models',
     ],
     logomarkClassName: 'fill-gray-300',
   },
   {
-    name: 'Creator',
+    name: 'World Builder',
     featured: true,
     price: '$20',
     credits: '2,250 credits/month',
     description:
-      'Unlock your creativity with custom assistants, advanced features, and collaboration.',
+      'Everything you need to build immersive worlds with friends and AI.',
     button: {
-      label: 'Start creating',
+      label: 'Build your world',
       href: '/register',
     },
     features: [
-      'Create custom AI assistants',
-      'Advanced image & video generation',
-      'Group collaboration & boards',
-      'Access to all AI models',
-      'Spatial audio conversations',
-      'Document upload & analysis',
+      'Create custom AI companions',
+      'Advanced generation tools',
+      'Private groups & worlds',
+      'All AI model access',
+      'Spatial audio rooms',
+      'Real-time collaboration',
       'Priority support',
     ],
     logomarkClassName: 'fill-cyan-500',
   },
   {
-    name: 'Pro',
+    name: 'Universe Creator',
     featured: false,
     price: '$100',
     credits: '12,500 credits/month',
     description:
-      'For power users who want unlimited creative freedom and maximum productivity.',
+      'For serious world builders who need unlimited creative power.',
     button: {
-      label: 'Go Pro',
+      label: 'Create universes',
       href: '/register',
     },
     features: [
-      'Everything in Creator',
-      'Enhanced reasoning AI models',
-      'Bulk image generation',
-      'Advanced editing tools',
-      'Organization management',
-      'Custom voice training',
+      'Everything in World Builder',
+      'Advanced reasoning models',
+      'Bulk content generation',
+      'Multiple organizations',
+      'Custom voice creation',
       'API access (coming soon)',
       'Dedicated support',
     ],
@@ -83,22 +82,22 @@ const plans = [
 
 const addOnPacks = [
   {
-    name: 'Boost',
+    name: 'Quick Boost',
     price: '$5',
     credits: '500 credits',
-    description: 'Perfect for occasional creative bursts',
+    description: 'For weekend world-building sessions',
   },
   {
-    name: 'Power',
+    name: 'Creator Pack',
     price: '$10',
     credits: '1,000 credits',
-    description: 'Great for regular content creation',
+    description: 'Fuel your regular creative flow',
   },
   {
-    name: 'Pro Pack',
+    name: 'Builder Bundle',
     price: '$25',
     credits: '2,500 credits',
-    description: 'Best value for heavy usage',
+    description: 'Best value for active creators',
   },
 ]
 
@@ -296,8 +295,7 @@ export function Pricing() {
             Simple credit-based pricing.
           </h2>
           <p className="mt-2 text-lg text-gray-600">
-            Start for free, upgrade when you&rsquo;re ready to unlock the full
-            creative potential of AI companions.
+            Start building for free. Scale up as your world grows.
           </p>
         </div>
 
@@ -310,11 +308,10 @@ export function Pricing() {
         {/* Add-on Credit Packs */}
         <div className="mx-auto mt-20 max-w-2xl text-center">
           <h3 className="text-2xl font-medium text-gray-900">
-            Need more credits?
+            Need more creative fuel?
           </h3>
           <p className="mt-2 text-gray-600">
-            Add-on credit packs roll over month to month. Perfect for creative
-            bursts.
+            Add-on credit packs that never expire. Perfect for big projects.
           </p>
         </div>
 
@@ -326,8 +323,8 @@ export function Pricing() {
 
         <div className="mx-auto mt-12 max-w-2xl text-center">
           <p className="text-sm text-gray-500">
-            Credits never expire and roll over each month. All plans include
-            access to our community and basic support.
+            Credits roll over forever. All plans include community access and
+            basic support.
           </p>
         </div>
       </Container>

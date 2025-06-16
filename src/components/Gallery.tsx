@@ -260,11 +260,11 @@ export function Gallery() {
           id="gallery-title"
           className="font-display text-3xl font-medium tracking-tight text-exoria-white sm:text-center"
         >
-          Bring any character to life.
+          Bring worlds to life.
         </h2>
         <p className="mt-2 text-lg text-gray-300 sm:text-center">
-          Create and interact with unlimited AI characters in immersive roleplay
-          scenarios.
+          Create immersive universes where AI companions and human creativity
+          merge into something magical.
         </p>
         <ImageGrid />
       </Container>

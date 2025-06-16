@@ -4,39 +4,39 @@ import { Container } from '@/components/Container'
 
 const features = [
   {
-    name: 'Smart conversations',
+    name: 'Collaborative boards',
     description:
-      'Chat with AI assistants that remember context, search the web, and access your documents. Choose from multiple AI models for different needs.',
+      'Visual canvases where everyone creates together. Drag images, conversations, and ideas into beautiful collections. Changes sync instantly for all members.',
     icon: DeviceArrowIcon,
   },
   {
-    name: 'Voice & audio',
+    name: 'Multi-user voice rooms',
     description:
-      'Real-time voice conversations with push-to-talk or continuous modes. Every character gets their own unique voice with spatial audio positioning.',
+      'Real conversations with humans and AIs talking simultaneously. Spatial audio creates immersive experiences. Interrupt, laugh, overlap—just like real life.',
     icon: DeviceCardsIcon,
   },
   {
-    name: 'Media gallery',
+    name: 'AI companions that evolve',
     description:
-      'Organized gallery of all your creations. Filter by type, date, or group. Full-screen viewing with easy sharing and saving to device.',
+      'Each AI has unique personality, voice, and memory. They remember your world&rsquo;s history and grow with your community. From wise sages to chaotic tricksters.',
     icon: DeviceClockIcon,
   },
   {
-    name: 'Visual boards',
+    name: 'Creative generation tools',
     description:
-      'Drag-and-drop boards to organize text, images, videos, and maps. Resize and arrange content with multi-select batch operations.',
+      'Generate images in multiple styles—photorealistic to abstract. Edit by describing or drawing. Create videos from stills. Batch generate variations.',
     icon: DeviceListIcon,
   },
   {
-    name: 'Group collaboration',
+    name: 'Group dynamics',
     description:
-      'Create organizations with custom permissions. Share AI assistants and boards with friends. See what others are creating and join their adventures.',
+      'Create organizations with custom permissions. Watch friends interact with AIs in real-time. Learn from how others prompt and create.',
     icon: DeviceLockIcon,
   },
   {
-    name: 'Mobile-first design',
+    name: 'World persistence',
     description:
-      'Optimized for iOS with gesture-based navigation. Works offline for creativity anywhere with push notifications for group updates.',
+      'Your worlds live on even when you&rsquo;re away. Return to ongoing conversations, evolving stories, and growing collections. Access anywhere, even offline.',
     icon: DeviceChartIcon,
   },
 ]
@@ -199,15 +199,15 @@ export function SecondaryFeatures() {
             className="font-mediumtext-gray-900 font-outfit text-3xl"
             style={{ letterSpacing: 'var(--letter-spacing-heading-3xl)' }}
           >
-            Now is the time to unleash your creativity.
+            Now is the time to build worlds together.
           </h2>
           <p
             className="mt-2 text-lg text-gray-600"
             style={{ letterSpacing: 'var(--letter-spacing-body-lg)' }}
           >
-            Whether you want to chat with AI characters, create stunning
-            artwork, or collaborate with friends, Exoria gives you the tools to
-            bring your imagination to life.
+            Whether you&rsquo;re crafting epic stories, designing characters, or
+            just vibing with friends and AI—Exoria gives you the tools to bring
+            collective imagination to life.
           </p>
         </div>
         <ul

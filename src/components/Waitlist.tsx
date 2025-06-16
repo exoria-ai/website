@@ -69,8 +69,8 @@ export function Waitlist() {
           className="mt-4 text-lg text-gray-600"
           style={{ letterSpacing: 'var(--letter-spacing-body-lg)' }}
         >
-          Characters that actually feel real. Be the first to build worlds with
-          Exoria.
+          Build worlds where AI and humans create together. Be the first to
+          experience social AI.
         </p>
         <form
           onSubmit={handleSubmit}

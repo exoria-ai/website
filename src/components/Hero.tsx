@@ -113,16 +113,16 @@ export function Hero() {
               className="font-mediumtext-gray-900 font-outfit text-4xl"
               style={{ letterSpacing: 'var(--letter-spacing-heading-4xl)' }}
             >
-              Characters that actually feel real.
+              Build Worlds. Meet Souls.
             </h1>
             <p
               className="mt-6 font-manrope text-lg text-gray-600"
               style={{ letterSpacing: 'var(--letter-spacing-body-lg)' }}
             >
-              The first social AI experience where you can chat with AI
-              characters that have unique personalities, voices, and memories.
-              Create stunning artwork, collaborate with friends, and build
-              worlds together in your personal creative playground.
+              The first social AI experience where humans and AI create together
+              in real-time. Build immersive worlds with unique AI companions,
+              generate stunning visuals, and collaborate with friends in your
+              shared creative universe.
             </p>
             <div className="mt-8 flex flex-wrap gap-x-6 gap-y-4 bg-exoria-white">
               <AppStoreLink />
