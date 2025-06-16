@@ -440,10 +440,10 @@ function FeaturesDesktop() {
         ))}
       </TabList>
       <div className="relative col-span-6">
-        <div className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2">
+        <div className="absolute top-1/2 left-1/2 z-0 -translate-x-1/2 -translate-y-1/2">
           <CircleBackground color="#13B5C8" className="animate-spin-slower" />
         </div>
-        <div className="z-10 mx-auto w-full max-w-[366px]">
+        <div className="relative z-10 mx-auto w-full max-w-[366px]">
           <TabPanels as={Fragment}>
             <AnimatePresence
               initial={false}
@@ -516,13 +516,13 @@ function FeaturesMobile() {
             className="w-full flex-none snap-center px-4 sm:px-6"
           >
             <div className="relative transform overflow-hidden rounded-2xl bg-gray-800 px-5 py-6">
-              <div className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2">
+              <div className="absolute top-1/2 left-1/2 z-0 -translate-x-1/2 -translate-y-1/2">
                 <CircleBackground
                   color="#13B5C8"
                   className={featureIndex % 2 === 1 ? 'rotate-180' : undefined}
                 />
               </div>
-              <div className="relative mx-auto w-full max-w-[366px]">
+              <div className="relative z-10 mx-auto w-full max-w-[366px]">
                 <feature.screen />
               </div>
               <div className="absolute inset-x-0 bottom-0 bg-gray-800/95 p-6 backdrop-blur-sm sm:p-10">

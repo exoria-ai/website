@@ -27,7 +27,7 @@ export function Footer() {
               Privacy Policy
             </Link>
             <Link
-              href="#"
+              href="/investor-relations"
               className="text-sm text-gray-600 hover:text-gray-900"
             >
               Investor Relations
