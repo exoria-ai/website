@@ -18,7 +18,7 @@ const plans = [
       'Perfect for discovering what&rsquo;s possible in social AI creation.',
     button: {
       label: 'Start exploring',
-      href: 'https://testflight.apple.com/join/KZdSCAC9',
+      href: 'https://apps.apple.com/us/app/exoria/id6746063558',
     },
     features: [
       'Basic world access',
@@ -43,7 +43,7 @@ const plans = [
       'Everything you need to build immersive worlds with friends and AI.',
     button: {
       label: 'Build your world',
-      href: 'https://testflight.apple.com/join/KZdSCAC9',
+      href: 'https://apps.apple.com/us/app/exoria/id6746063558',
     },
     features: [
       'Create custom AI companions',
@@ -65,7 +65,7 @@ const plans = [
       'For serious world builders who need unlimited creative power.',
     button: {
       label: 'Create universes',
-      href: 'https://testflight.apple.com/join/KZdSCAC9',
+      href: 'https://apps.apple.com/us/app/exoria/id6746063558',
     },
     features: [
       'Everything in World Builder',
@@ -268,7 +268,7 @@ function AddOnPack({
       <p className="mt-1 text-sm font-medium text-cyan-600">{credits}</p>
       <p className="mt-2 text-sm text-gray-600">{description}</p>
       <Button
-        href="https://testflight.apple.com/join/KZdSCAC9"
+        href="https://apps.apple.com/us/app/exoria/id6746063558"
         color="gray"
         className="mt-4"
         aria-label={`Purchase ${name} add-on pack`}

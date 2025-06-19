@@ -86,7 +86,7 @@ export default function InvestorRelations() {
                 <div>
                   <h3 className="font-semibold text-gray-900">Stage</h3>
                   <p className="text-sm text-gray-600">
-                    Early-stage company with working product in TestFlight beta.
+                    Early-stage company with live product on the App Store.
                   </p>
                 </div>
               </div>

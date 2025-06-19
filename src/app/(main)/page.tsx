@@ -1,11 +1,9 @@
-import { CallToAction } from '@/components/CallToAction'
 import { Faqs } from '@/components/Faqs'
-import { Footer } from '@/components/Footer'
-import { Header } from '@/components/Header'
 import { Hero } from '@/components/Hero'
+import { Pricing } from '@/components/Pricing'
 import { PrimaryFeatures } from '@/components/PrimaryFeatures'
+import { Gallery } from '@/components/Gallery'
 import { SecondaryFeatures } from '@/components/SecondaryFeatures'
-import { StockLogos } from '@/components/StockLogos'
 import { Waitlist } from '@/components/Waitlist'
 
 export default function Home() {
@@ -34,8 +32,9 @@ export default function Home() {
       <Hero />
       <PrimaryFeatures />
       <SecondaryFeatures />
-      <CallToAction />
-      <StockLogos />
+
+      <Gallery />
+      <Pricing />
       <Faqs />
     </>
   )

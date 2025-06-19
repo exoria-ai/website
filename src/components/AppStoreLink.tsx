@@ -8,8 +8,8 @@ export function AppStoreLink({
 }) {
   return (
     <Link
-      href="https://testflight.apple.com/join/KZdSCAC9"
-      aria-label="Download on TestFlight"
+      href="https://apps.apple.com/us/app/exoria/id6746063558"
+      aria-label="Download on the App Store"
       className={clsx(
         'rounded-xl transition-colors',
         color === 'black'
