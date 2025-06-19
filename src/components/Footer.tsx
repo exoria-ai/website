@@ -33,7 +33,7 @@ export function Footer() {
               Investor Relations
             </Link>
             <Link
-              href="#"
+              href="/terms-of-service"
               className="text-sm text-gray-600 hover:text-gray-900"
             >
               Terms & Conditions
