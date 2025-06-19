@@ -7,6 +7,7 @@ import clsx from 'clsx'
 import { AppStoreLink } from '@/components/AppStoreLink'
 import { Button } from '@/components/Button'
 import { Container } from '@/components/Container'
+import { DiscordLink } from '@/components/DiscordLink'
 import { VideoModal } from '@/components/VideoModal'
 
 import logoBbc from '@/images/logos/bbc.svg'
@@ -132,6 +133,7 @@ export function Hero() {
                   Watch the video
                 </span>
               </Button>
+              <DiscordLink />
             </div>
           </div>
           <div className="relative mt-10 sm:mt-20 lg:col-span-5 lg:row-span-2 lg:mt-0 xl:col-span-6">
