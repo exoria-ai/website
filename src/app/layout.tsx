@@ -23,6 +23,10 @@ export const metadata: Metadata = {
   },
   description:
     'The first social AI experience where you can chat with AI characters that have unique personalities, voices, and memories. Create stunning artwork, collaborate with friends, and build worlds together.',
+  icons: {
+    icon: '/icon.svg',
+    apple: '/icon.svg',
+  },
 }
 
 export default function RootLayout({
