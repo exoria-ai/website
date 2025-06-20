@@ -67,105 +67,191 @@ export default function Credits() {
               plans:
             </p>
 
-            <div className="mt-8 overflow-hidden rounded-lg border border-gray-200">
-              <table className="min-w-full divide-y divide-gray-200 bg-white">
-                <thead className="bg-gray-50">
-                  <tr>
-                    <th className="px-6 py-3 text-left text-xs font-medium tracking-wider text-gray-500 uppercase">
-                      Premium Action
-                    </th>
-                    <th className="px-6 py-3 text-left text-xs font-medium tracking-wider text-gray-500 uppercase">
-                      Credit Cost
-                    </th>
-                    <th className="px-6 py-3 text-center text-xs font-medium tracking-wider text-gray-500 uppercase">
+            <div className="mt-8 space-y-6">
+              <div className="rounded-lg border border-gray-200 bg-white p-6">
+                <div className="mb-4 flex items-center justify-between">
+                  <h3 className="text-lg font-semibold text-gray-900">
+                    Standard Chat with Voice (GPT-4.1)
+                  </h3>
+                  <span className="rounded bg-gray-100 px-2 py-1 text-sm font-medium text-gray-500">
+                    ~2.5 Credits/msg
+                  </span>
+                </div>
+                <div className="grid grid-cols-2 gap-6">
+                  <div className="text-center">
+                    <div className="mb-2 text-xs font-semibold tracking-wider text-gray-500 uppercase">
                       Pro Plan
-                      <br />
-                      <span className="text-sm font-medium normal-case">
-                        (2,250 credits)
-                      </span>
-                    </th>
-                    <th className="px-6 py-3 text-center text-xs font-medium tracking-wider text-gray-500 uppercase">
+                    </div>
+                    <div className="mb-1 text-xl font-bold text-gray-900">
+                      ~900
+                    </div>
+                    <div className="text-sm text-gray-600">messages</div>
+                    <div className="mt-1 text-xs text-gray-400">
+                      2,250 credits
+                    </div>
+                  </div>
+                  <div className="text-center">
+                    <div className="mb-2 text-xs font-semibold tracking-wider text-gray-500 uppercase">
                       Max Plan
-                      <br />
-                      <span className="text-sm font-medium normal-case">
-                        (12,500 credits)
-                      </span>
-                    </th>
-                  </tr>
-                </thead>
-                <tbody className="divide-y divide-gray-200 bg-white">
-                  <tr>
-                    <td className="px-6 py-4 text-sm whitespace-nowrap text-gray-900">
-                      Standard Chat with Voice (GPT-4.1)
-                    </td>
-                    <td className="px-6 py-4 text-sm whitespace-nowrap text-gray-500">
-                      ~2.5 Credits/msg
-                    </td>
-                    <td className="px-6 py-4 text-center text-sm font-medium whitespace-nowrap text-gray-900">
-                      ~900 messages
-                    </td>
-                    <td className="px-6 py-4 text-center text-sm font-medium whitespace-nowrap text-gray-900">
-                      ~5,000 messages
-                    </td>
-                  </tr>
-                  <tr>
-                    <td className="px-6 py-4 text-sm whitespace-nowrap text-gray-900">
-                      Generate a &ldquo;Kontext&rdquo; Image
-                    </td>
-                    <td className="px-6 py-4 text-sm whitespace-nowrap text-gray-500">
-                      ~4 Credits
-                    </td>
-                    <td className="px-6 py-4 text-center text-sm font-medium whitespace-nowrap text-gray-900">
-                      ~560 images
-                    </td>
-                    <td className="px-6 py-4 text-center text-sm font-medium whitespace-nowrap text-gray-900">
-                      ~3,125 images
-                    </td>
-                  </tr>
-                  <tr>
-                    <td className="px-6 py-4 text-sm whitespace-nowrap text-gray-900">
-                      Generate a &ldquo;GPT Image&rdquo; (Default)
-                    </td>
-                    <td className="px-6 py-4 text-sm whitespace-nowrap text-gray-500">
-                      ~7.5 Credits
-                    </td>
-                    <td className="px-6 py-4 text-center text-sm font-medium whitespace-nowrap text-gray-900">
-                      ~300 images
-                    </td>
-                    <td className="px-6 py-4 text-center text-sm font-medium whitespace-nowrap text-gray-900">
-                      ~1,667 images
-                    </td>
-                  </tr>
-                  <tr>
-                    <td className="px-6 py-4 text-sm whitespace-nowrap text-gray-900">
-                      Generate a &ldquo;Luma&rdquo; Video (5s)
-                    </td>
-                    <td className="px-6 py-4 text-sm whitespace-nowrap text-gray-500">
-                      ~22 Credits
-                    </td>
-                    <td className="px-6 py-4 text-center text-sm font-medium whitespace-nowrap text-gray-900">
-                      ~100 videos
-                    </td>
-                    <td className="px-6 py-4 text-center text-sm font-medium whitespace-nowrap text-gray-900">
-                      ~568 videos
-                    </td>
-                  </tr>
-                  <tr>
-                    <td className="px-6 py-4 text-sm whitespace-nowrap text-gray-900">
-                      Generate a &ldquo;GPT Image&rdquo; (Quality)
-                    </td>
-                    <td className="px-6 py-4 text-sm whitespace-nowrap text-gray-500">
-                      ~30 Credits
-                    </td>
-                    <td className="px-6 py-4 text-center text-sm font-medium whitespace-nowrap text-gray-900">
-                      ~75 images
-                    </td>
-                    <td className="px-6 py-4 text-center text-sm font-medium whitespace-nowrap text-gray-900">
-                      ~417 images
-                    </td>
-                  </tr>
-                </tbody>
-              </table>
+                    </div>
+                    <div className="mb-1 text-xl font-bold text-gray-900">
+                      ~5,000
+                    </div>
+                    <div className="text-sm text-gray-600">messages</div>
+                    <div className="mt-1 text-xs text-gray-400">
+                      12,500 credits
+                    </div>
+                  </div>
+                </div>
+              </div>
+
+              <div className="rounded-lg border border-gray-200 bg-white p-6">
+                <div className="mb-4 flex items-center justify-between">
+                  <h3 className="text-lg font-semibold text-gray-900">
+                    Generate a &ldquo;Kontext&rdquo; Image
+                  </h3>
+                  <span className="rounded bg-gray-100 px-2 py-1 text-sm font-medium text-gray-500">
+                    ~4 Credits
+                  </span>
+                </div>
+                <div className="grid grid-cols-2 gap-6">
+                  <div className="text-center">
+                    <div className="mb-2 text-xs font-semibold tracking-wider text-gray-500 uppercase">
+                      Pro Plan
+                    </div>
+                    <div className="mb-1 text-xl font-bold text-gray-900">
+                      ~560
+                    </div>
+                    <div className="text-sm text-gray-600">images</div>
+                    <div className="mt-1 text-xs text-gray-400">
+                      2,250 credits
+                    </div>
+                  </div>
+                  <div className="text-center">
+                    <div className="mb-2 text-xs font-semibold tracking-wider text-gray-500 uppercase">
+                      Max Plan
+                    </div>
+                    <div className="mb-1 text-xl font-bold text-gray-900">
+                      ~3,125
+                    </div>
+                    <div className="text-sm text-gray-600">images</div>
+                    <div className="mt-1 text-xs text-gray-400">
+                      12,500 credits
+                    </div>
+                  </div>
+                </div>
+              </div>
+
+              <div className="rounded-lg border border-gray-200 bg-white p-6">
+                <div className="mb-4 flex items-center justify-between">
+                  <h3 className="text-lg font-semibold text-gray-900">
+                    Generate a &ldquo;GPT Image&rdquo; (Default)
+                  </h3>
+                  <span className="rounded bg-gray-100 px-2 py-1 text-sm font-medium text-gray-500">
+                    ~7.5 Credits
+                  </span>
+                </div>
+                <div className="grid grid-cols-2 gap-6">
+                  <div className="text-center">
+                    <div className="mb-2 text-xs font-semibold tracking-wider text-gray-500 uppercase">
+                      Pro Plan
+                    </div>
+                    <div className="mb-1 text-xl font-bold text-gray-900">
+                      ~300
+                    </div>
+                    <div className="text-sm text-gray-600">images</div>
+                    <div className="mt-1 text-xs text-gray-400">
+                      2,250 credits
+                    </div>
+                  </div>
+                  <div className="text-center">
+                    <div className="mb-2 text-xs font-semibold tracking-wider text-gray-500 uppercase">
+                      Max Plan
+                    </div>
+                    <div className="mb-1 text-xl font-bold text-gray-900">
+                      ~1,667
+                    </div>
+                    <div className="text-sm text-gray-600">images</div>
+                    <div className="mt-1 text-xs text-gray-400">
+                      12,500 credits
+                    </div>
+                  </div>
+                </div>
+              </div>
+
+              <div className="rounded-lg border border-gray-200 bg-white p-6">
+                <div className="mb-4 flex items-center justify-between">
+                  <h3 className="text-lg font-semibold text-gray-900">
+                    Generate a &ldquo;Luma&rdquo; Video (5s)
+                  </h3>
+                  <span className="rounded bg-gray-100 px-2 py-1 text-sm font-medium text-gray-500">
+                    ~22 Credits
+                  </span>
+                </div>
+                <div className="grid grid-cols-2 gap-6">
+                  <div className="text-center">
+                    <div className="mb-2 text-xs font-semibold tracking-wider text-gray-500 uppercase">
+                      Pro Plan
+                    </div>
+                    <div className="mb-1 text-xl font-bold text-gray-900">
+                      ~100
+                    </div>
+                    <div className="text-sm text-gray-600">videos</div>
+                    <div className="mt-1 text-xs text-gray-400">
+                      2,250 credits
+                    </div>
+                  </div>
+                  <div className="text-center">
+                    <div className="mb-2 text-xs font-semibold tracking-wider text-gray-500 uppercase">
+                      Max Plan
+                    </div>
+                    <div className="mb-1 text-xl font-bold text-gray-900">
+                      ~568
+                    </div>
+                    <div className="text-sm text-gray-600">videos</div>
+                    <div className="mt-1 text-xs text-gray-400">
+                      12,500 credits
+                    </div>
+                  </div>
+                </div>
+              </div>
+
+              <div className="rounded-lg border border-gray-200 bg-white p-6">
+                <div className="mb-4 flex items-center justify-between">
+                  <h3 className="text-lg font-semibold text-gray-900">
+                    Generate a &ldquo;GPT Image&rdquo; (Quality)
+                  </h3>
+                  <span className="rounded bg-gray-100 px-2 py-1 text-sm font-medium text-gray-500">
+                    ~30 Credits
+                  </span>
+                </div>
+                <div className="grid grid-cols-2 gap-6">
+                  <div className="text-center">
+                    <div className="mb-2 text-xs font-semibold tracking-wider text-gray-500 uppercase">
+                      Pro Plan
+                    </div>
+                    <div className="mb-1 text-xl font-bold text-gray-900">
+                      ~75
+                    </div>
+                    <div className="text-sm text-gray-600">images</div>
+                    <div className="mt-1 text-xs text-gray-400">
+                      2,250 credits
+                    </div>
+                  </div>
+                  <div className="text-center">
+                    <div className="mb-2 text-xs font-semibold tracking-wider text-gray-500 uppercase">
+                      Max Plan
+                    </div>
+                    <div className="mb-1 text-xl font-bold text-gray-900">
+                      ~417
+                    </div>
+                    <div className="text-sm text-gray-600">images</div>
+                    <div className="mt-1 text-xs text-gray-400">
+                      12,500 credits
+                    </div>
+                  </div>
+                </div>
+              </div>
             </div>
 
             <div className="mt-6 rounded-md bg-blue-50 p-4">
