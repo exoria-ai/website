@@ -39,6 +39,12 @@ export function Footer() {
               Terms & Conditions
             </Link>
             <Link
+              href="/credits"
+              className="text-sm text-gray-600 hover:text-gray-900"
+            >
+              Credits
+            </Link>
+            <Link
               href="#"
               className="text-sm text-gray-600 hover:text-gray-900"
             >
