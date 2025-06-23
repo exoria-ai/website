@@ -574,6 +574,50 @@ export default function PrivacyPolicy() {
               all users. If you need this policy in an alternative format,
               please contact us at accessibility@exoria.app.
             </p>
+
+            <h2 className="mt-12 text-2xl font-semibold text-gray-900">
+              15. SMS Messaging and Mobile Information
+            </h2>
+            <p>
+              When you use our social invite system, we may collect and use your
+              mobile phone number to send SMS messages. We take your privacy
+              seriously and handle your mobile information with the following
+              practices:
+            </p>
+
+            <h3 className="mt-8 text-xl font-semibold text-gray-900">
+              Information Collection and Use
+            </h3>
+            <p>
+              - We collect phone numbers only when you explicitly provide them
+              for our social invite system - Phone numbers are used solely to
+              send invitation messages to the contacts you specify - We do not
+              sell, rent, or share your mobile information with third parties
+              for their marketing purposes - We may share information with
+              service providers who assist us in operating our SMS services, but
+              only for that limited purpose
+            </p>
+
+            <h3 className="mt-8 text-xl font-semibold text-gray-900">
+              SMS Consent and Opt-Out
+            </h3>
+            <p>
+              - By providing your phone number, you consent to receive SMS
+              messages from Exoria - Message and data rates may apply depending
+              on your mobile carrier plan - You can opt-out of SMS messages at
+              any time by replying STOP to any message - For help, reply HELP to
+              any message or contact us at support@exoria.ai
+            </p>
+
+            <h3 className="mt-8 text-xl font-semibold text-gray-900">
+              Data Security
+            </h3>
+            <p>
+              - We implement appropriate technical and organizational measures
+              to protect your mobile information - Phone numbers are encrypted
+              and stored securely - We retain phone numbers only as long as
+              necessary to provide our services
+            </p>
           </div>
         </div>
       </Container>
