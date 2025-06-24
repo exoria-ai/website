@@ -1,8 +1,16 @@
 'use client'
 
 import { useState } from 'react'
+import { Button } from '@/components/Button'
+import { Container } from '@/components/Container'
+import { TextField } from '@/components/Fields'
+import { siteConfig } from '@/config'
 
 export function Waitlist() {
+  if (!siteConfig.waitlist.enabled) {
+    return null
+  }
+
   const [email, setEmail] = useState('')
   const [status, setStatus] = useState<
     'idle' | 'loading' | 'success' | 'error'
