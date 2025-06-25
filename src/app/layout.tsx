@@ -1,6 +1,7 @@
 import { type Metadata } from 'next'
 import { Outfit, Manrope } from 'next/font/google'
 import clsx from 'clsx'
+import { Analytics } from '@vercel/analytics/next'
 
 import '@/styles/tailwind.css'
 
@@ -43,7 +44,10 @@ export default function RootLayout({
         manrope.variable,
       )}
     >
-      <body className="font-manrope">{children}</body>
+      <body className="font-manrope">
+        {children}
+        <Analytics />
+      </body>
     </html>
   )
 }
