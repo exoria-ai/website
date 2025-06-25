@@ -17,22 +17,10 @@ const faqs = [
       answer:
         'Exoria offers multiple AI model tiers from different providers including OpenAI, Anthropic, Google, and Grok. Choose from lightning-fast responses to advanced reasoning based on your needs.',
     },
-  ],
-  [
     {
       question: 'How do voice conversations work?',
       answer:
         'Each AI assistant has their own unique voice and can have real-time conversations with you. Use push-to-talk for quick questions or continuous conversation mode for natural, flowing discussions with spatial audio.',
-    },
-    {
-      question: 'Can I collaborate with friends on Exoria?',
-      answer:
-        'Yes! Create groups with friends, share custom AI assistants, and collaborate on visual boards. Control permissions and build creative worlds together. It&rsquo;s the first social AI experience.',
-    },
-    {
-      question: 'What are boards and how do I use them?',
-      answer:
-        'Boards are visual canvases where you can organize text, images, videos, and more. Drag and drop content, resize items, and share with group members. Perfect for mood boards, project planning, or creative collections.',
     },
   ],
   [
@@ -42,14 +30,41 @@ const faqs = [
         'Transform ideas into stunning visuals using natural language descriptions. Choose from multiple artistic styles like photorealistic, 3D cartoon, or abstract. Edit existing images with text prompts or create videos from static images.',
     },
     {
-      question: 'Is Exoria free to use?',
+      question: 'What are boards and how do I use them?',
       answer:
-        'Exoria offers a free tier with limited credits to get you started. Premium plans provide more credits, access to advanced AI models, and enhanced features. All new users get 100 free credits to explore the app.',
+        'Boards are visual canvases where you can organize text, images, videos, and more. Drag and drop content, resize items, and share with group members. Perfect for mood boards, project planning, or creative collections.',
+    },
+    {
+      question: 'Can I collaborate with friends on Exoria?',
+      answer:
+        'Yes! Create groups with friends, share custom AI assistants, and collaborate on visual boards. Control permissions and build creative worlds together. It&rsquo;s the first social AI experience.',
     },
     {
       question: 'What devices does Exoria support?',
       answer:
         'Exoria is currently optimized for iOS devices including iPhone and iPad. The app features gesture-based navigation, offline access to conversations, and responsive design for the best mobile experience.',
+    },
+  ],
+  [
+    {
+      question: 'Is Exoria free to use?',
+      answer:
+        'Exoria offers a free tier with limited credits to get you started. Premium plans provide more credits, access to advanced AI models, and enhanced features. All new users get 100 free credits to explore the app.',
+    },
+    {
+      question: 'How do credits work?',
+      answer:
+        'Credits are used for all AI-powered actions in Exoria, like generating images or using advanced chat models. Each action has a different credit cost. Your monthly plan includes credits that reset each billing cycle. Credits from add-on packs never expire.',
+    },
+    {
+      question: 'Do credits roll over to the next month?',
+      answer:
+        'Credits from your monthly plan do not roll over and will reset at the start of each billing cycle. Credits purchased from a Credit Pack, however, never expire and will roll over until you use them.',
+    },
+    {
+      question: 'Are there any plans for an Android or web version?',
+      answer:
+        'Yes! An Android version is in active development, and a web-based platform is on our roadmap. We want to make Exoria accessible to everyone, everywhere.',
     },
   ],
 ]

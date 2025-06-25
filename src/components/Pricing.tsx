@@ -21,17 +21,15 @@ const plans = [
       href: 'https://apps.apple.com/us/app/exoria/id6746063558',
     },
     features: [
-      'Basic world access',
-      'Limited AI interactions',
-      'Community worlds only',
-      'Basic generation tools',
+      '100 credits/month',
+      'Unlimited Level 0 Chat Model',
+      'Limited Photon Flash Images',
+      'Create custom AI characters',
+      'AI image & video generation',
+      'Collaborative visual boards',
+      'Group chat with AIs & friends',
     ],
-    limitations: [
-      'No custom AI creation',
-      'No private groups',
-      'View-only collaboration',
-      'Standard AI models',
-    ],
+    limitations: ['No access to credit packs'],
     logomarkClassName: 'fill-gray-300',
   },
   {
@@ -46,13 +44,12 @@ const plans = [
       href: 'https://apps.apple.com/us/app/exoria/id6746063558',
     },
     features: [
-      'Create custom AI companions',
-      'Advanced generation tools',
-      'Private groups & worlds',
-      'All AI model access',
-      'Spatial audio rooms',
-      'Real-time collaboration',
-      'Priority support',
+      'Everything in Explorer',
+      'Unlimited Level 1 Chat Model',
+      'Unlimited Level 1 Thinking Model',
+      'Unlimited Level 1 Search Model',
+      'Unlimited Photon Flash Images',
+      'Access to credit packs',
     ],
     logomarkClassName: 'fill-cyan-500',
   },
@@ -69,12 +66,11 @@ const plans = [
     },
     features: [
       'Everything in World Builder',
-      'Advanced reasoning models',
-      'Bulk content generation',
-      'Multiple organizations',
-      'Custom voice creation',
-      'API access (coming soon)',
-      'Dedicated support',
+      'Unlimited Level 2 Chat',
+      'Unlimited Level 2 Thinking',
+      'Unlimited Level 2 Search',
+      'Unlimited Photon Images',
+      'Ability to purchase credit packs',
     ],
     logomarkClassName: 'fill-purple-500',
   },
@@ -85,19 +81,16 @@ const addOnPacks = [
     name: 'Quick Boost',
     price: '$5',
     credits: '500 credits',
-    description: 'For weekend world-building sessions',
   },
   {
     name: 'Creator Pack',
     price: '$10',
     credits: '1,000 credits',
-    description: 'Fuel your regular creative flow',
   },
   {
     name: 'Builder Bundle',
     price: '$25',
     credits: '2,500 credits',
-    description: 'Best value for active creators',
   },
 ]
 
@@ -252,12 +245,10 @@ function AddOnPack({
   name,
   price,
   credits,
-  description,
 }: {
   name: string
   price: string
   credits: string
-  description: string
 }) {
   return (
     <div className="flex flex-col rounded-2xl bg-exoria-white p-6 shadow-sm ring-1 ring-gray-200">
@@ -266,11 +257,10 @@ function AddOnPack({
         <span className="text-2xl font-bold text-gray-900">{price}</span>
       </div>
       <p className="mt-1 text-sm font-medium text-cyan-600">{credits}</p>
-      <p className="mt-2 text-sm text-gray-600">{description}</p>
       <Button
         href="https://apps.apple.com/us/app/exoria/id6746063558"
         color="gray"
-        className="mt-4"
+        className="mt-6"
         aria-label={`Purchase ${name} add-on pack`}
       >
         Add Credits
@@ -323,8 +313,8 @@ export function Pricing() {
 
         <div className="mx-auto mt-12 max-w-2xl text-center">
           <p className="text-sm text-gray-500">
-            Credits roll over forever. All plans include community access and
-            basic support.
+            Add-on credits from packs roll over and never expire. Monthly
+            subscription credits reset each billing cycle.
           </p>
         </div>
       </Container>
