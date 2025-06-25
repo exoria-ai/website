@@ -7,15 +7,15 @@ import { TextField } from '@/components/Fields'
 import { siteConfig } from '@/config'
 
 export function Waitlist() {
-  if (!siteConfig.waitlist.enabled) {
-    return null
-  }
-
   const [email, setEmail] = useState('')
   const [status, setStatus] = useState<
     'idle' | 'loading' | 'success' | 'error'
   >('idle')
   const [message, setMessage] = useState('')
+
+  if (!siteConfig.waitlist.enabled) {
+    return null
+  }
 
   const handleSubmit = async (event: React.FormEvent<HTMLFormElement>) => {
     event.preventDefault()
