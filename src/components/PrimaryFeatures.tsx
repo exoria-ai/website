@@ -522,7 +522,7 @@ function FeaturesMobile() {
                   className={featureIndex % 2 === 1 ? 'rotate-180' : undefined}
                 />
               </div>
-              <div className="relative z-10 mx-auto w-full max-w-[366px]">
+              <div className="relative z-10 mx-auto w-full max-w-[366px] -translate-y-4 scale-[.825] transform-gpu">
                 <feature.screen />
               </div>
               <div className="absolute inset-x-0 bottom-0 bg-gray-800/95 p-6 backdrop-blur-sm sm:p-10">
