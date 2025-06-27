@@ -18,7 +18,7 @@ import logoForbes from '@/images/logos/forbes.svg'
 import logoHuffpost from '@/images/logos/huffpost.svg'
 import logoTechcrunch from '@/images/logos/techcrunch.svg'
 import logoWired from '@/images/logos/wired.svg'
-import iPhoneImagine from '@/images/iPhone_Imagine.png'
+import iPhoneImagine from '@/images/iPhone_Imagine.webp'
 
 function BackgroundIllustration(props: React.ComponentPropsWithoutRef<'div'>) {
   let id = useId()

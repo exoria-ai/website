@@ -26,9 +26,9 @@ import {
   TransistorLogo,
   TupleLogo,
 } from '@/components/StockLogos'
-import iPhoneChat from '@/images/iPhone_Chat.png'
-import iPhoneCard from '@/images/iPhone_Card.png'
-import iPhoneSettings from '@/images/iPhone_Settings.png'
+import iPhoneChat from '@/images/iPhone_Chat.webp'
+import iPhoneCard from '@/images/Phone_Card.webp'
+import iPhoneSettings from '@/images/iPhone_Settings.webp'
 
 const MotionAppScreenHeader = motion(AppScreen.Header)
 const MotionAppScreenBody = motion(AppScreen.Body)
