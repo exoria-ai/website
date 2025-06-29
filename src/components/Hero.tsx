@@ -170,7 +170,7 @@ export function Hero() {
       <VideoModal
         isOpen={isVideoOpen}
         onClose={() => setIsVideoOpen(false)}
-        videoId="2rfHqlp8gY0"
+        videoId="CjmTHkCduvs"
         title="Exoria - AI Character Creation"
       />
     </div>
