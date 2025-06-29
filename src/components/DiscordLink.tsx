@@ -8,7 +8,7 @@ export function DiscordLink({
 }) {
   return (
     <Link
-      href="https://discord.gg/VU7kwBFC"
+      href="https://discord.com/channels/1385285761162543124/1385285761770852484"
       aria-label="Join our Discord community"
       className={clsx(
         'inline-flex items-center gap-2 rounded-lg border px-3 py-2 text-sm transition-colors',
